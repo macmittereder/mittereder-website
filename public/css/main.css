@@ -8,12 +8,13 @@ body {
 	padding-left: 15px;
 }
 
-h1.logo{
+h1.logotext{
 	float: right;
 	font-size: 60px;
 }
 
 ul.topnav {
+	position: relative;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -33,6 +34,6 @@ ul.topnav li a {
   font-size: 17px;
 }
 
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover { background-color: #555; }
 
-ul.topnav li.icon {display: none;}
+ul.topnav li.icon { display: none; }

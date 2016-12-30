@@ -1,21 +1,31 @@
+doctype html
+
 html
 	head
 		title= title
+		block css
 		link(rel='stylesheet', type='text/css', href='/css/main.css')
 	body
 		img(src="/images/fixedlogo.png", class="logoimage")
-		h1.logo= "Mittereder Studios"
+		h1.logotext= "Mittereder Studios"
 
 		ul.topnav
 			li
 				a(href="/") HOME
+			li.projects
+				a(href="/projects") PROJECTS
 			li
-				a(href="projects") PROJECTS
+				a(href="/about") ABOUT
 			li
-				a(href="about") ABOUT
+				a(href="/resume") RESUME
 			li
-				a(href="resume") RESUME
-			li
-				a(href="contact") CONTACT
+				a(href="/contact") CONTACT
 
 		block content
+	footer
+		block footer
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+			br
+			br
+			hr
+			p.footer Created by Mackenzie Mittereder
