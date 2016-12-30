@@ -3,18 +3,19 @@ html
 		title= title
 		link(rel='stylesheet', type='text/css', href='/css/main.css')
 	body
-		h1= "Mittereder Studios"
+		img(src="/images/fixedlogo.png", class="logoimage")
+		h1.logo= "Mittereder Studios"
+
 		ul.topnav
-			li 
+			li
 				a(href="/") HOME
 			li
 				a(href="projects") PROJECTS
 			li
 				a(href="about") ABOUT
-			li 
+			li
 				a(href="resume") RESUME
-			li 
+			li
 				a(href="contact") CONTACT
-				
+
 		block content
-			

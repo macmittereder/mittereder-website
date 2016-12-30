@@ -19,7 +19,7 @@ app.use('/resume', nResume);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
-        res.render('index', {title: "Welcome"});
+        res.render('index', {title: "Mittereder Studios"});
 });
 
 app.listen(8081, function() {

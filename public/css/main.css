@@ -1,4 +1,17 @@
-body {margin:0;}
+body {
+	margin:0;
+}
+
+.logoimage{
+	height: 150px;
+	width: 150px;
+	padding-left: 15px;
+}
+
+h1.logo{
+	float: right;
+	font-size: 60px;
+}
 
 ul.topnav {
   list-style-type: none;
