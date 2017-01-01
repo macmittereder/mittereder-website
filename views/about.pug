@@ -1,4 +1,12 @@
 extends layout
 
+block append css
+	link(rel='stylesheet', type='text/css', href='/css/about.css')
+
 block content
-	h2= "About Page"
+	.leftcontent
+		h2= "Mackenzie Mittereder"
+		h3= "Mobile App Developer"
+		p= ""
+	.rightcontent
+		img.pc(src="/images/pc.jpg")

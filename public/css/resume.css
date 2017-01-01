@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+}
+
+img.resume1 {
+	top: 900px;
+	width: 1000px;
+	height: 1294px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img.resume2 {
+	top: 2250px;
+	width: 1000px;
+	height: 1294px;
+	position: absolute;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	padding: 10px;
+	margin-top: 2700px;
+	bottom: 0px;
+}

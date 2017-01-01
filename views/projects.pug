@@ -1,10 +1,14 @@
 extends layout
 
-block content
-	h2= "Projects page"
+block append css
+	link(rel='stylesheet', type='text/css', href='/css/projects.css')
 
-	a(href="/projects/personalprojects") personal projects
-	br
-	a(href="/projects/contractorprojects") contractor projects
-	br
-	a(href="/projects/inprogressprojects") inprogress projects
+block content
+	h2= "Projects"
+	ul.projectnav
+		li
+			a(href="/projects/personalprojects") PERSOAL PROJECTS
+		li
+			a(href="/projects/contractorprojects") CONTRACTOR PROJECTS
+		li
+			a(href="/projects/inprogressprojects") INPROGRESS PROJECTS

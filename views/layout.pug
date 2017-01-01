@@ -4,7 +4,7 @@ html
 	head
 		title= title
 		block css
-		link(rel='stylesheet', type='text/css', href='/css/main.css')
+		link(rel='stylesheet', type='text/css', href='/css/layout.css')
 	body
 		img(src="/images/fixedlogo.png", class="logoimage")
 		h1.logotext= "Mittereder Studios"
@@ -24,8 +24,14 @@ html
 		block content
 	footer
 		block footer
-			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-			br
-			br
-			hr
-			p.footer Created by Mackenzie Mittereder
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		hr
+		ul.footer
+			li
+				a(href="https://www.youtube.com/channel/UCy0ozufXIKAtjRsTxD9VZNA") youtube
+			li
+				a(href="https://github.com/macmittereder") github
+			li
+				a(href="https://www.facebook.com/mac.mittereder") facebook
+		p= "Created by Mackenzie Mittereder"
+		address= "Copyright 2017 All Rights Reserved www.mittereder.com"
