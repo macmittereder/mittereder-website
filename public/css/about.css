@@ -4,19 +4,29 @@ body {
 
 .leftcontent {
 	float: left;
+	width: 50%;
 }
 
 .rightcontent {
 	float: right;
+	width: 50%;
 }
 
 img.pc {
-  width: 600px;
+  width: 700px;
   height: 500px;
   float: left;
 	padding-top: 10px;
 	padding-right: 10px;
   margin-right: 20%;
+}
+
+p.pctitle {
+	font-weight: bold;
+}
+
+.pctext p {
+	font-size: 15px;
 }
 
 footer {
@@ -26,6 +36,6 @@ footer {
 	width: 300px;
 	margin: auto;
 	padding: 10px;
-	margin-top: 600px;
+	margin-top: 750px;
 	bottom: 0px;
 }
