@@ -36,32 +36,43 @@ ul.projectnav li.icon {
 	display: none;
 }
 
-.card1 {
+table {
+	width: 100%;
+}
+
+table a {
+	color: #fff;
+}
+
+table a:hover {
+	font-weight: normal;
+}
+
+td.sidepadding {
+	padding-left: 5%;
+}
+
+td.middlepadding {
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+tr.projectrow {
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 400px;
 		float: left;
 }
-.card1:hover {
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.container1 {
-    padding: 2px 16px;
-}
-
-.card2 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-		float: right;
-    width: 400px;
-}
-
-.card2:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container2 {
+.container {
     padding: 2px 16px;
 }
 
