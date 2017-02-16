@@ -18,6 +18,7 @@ h1.logotext{
 ul.topnav {
 	position: relative;
   list-style-type: none;
+	text-align: center;
 	width: 100%;
   margin: 0;
   padding: 0;
@@ -27,6 +28,7 @@ ul.topnav {
 
 ul.topnav li {
 	float: left;
+	text-align: center;
 }
 
 ul.topnav li a {
