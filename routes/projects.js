@@ -38,4 +38,8 @@ router.get('/graphgame', function(req, res, next) {
   res.render('graphgame');
 });
 
+router.get('/rockpaperscissors', function(req, res, next) {
+  res.render('rockpaperscissors');
+});
+
 module.exports = router;
