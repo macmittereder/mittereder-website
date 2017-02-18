@@ -6,20 +6,20 @@ html
 		block css
 		link(rel='stylesheet', type='text/css', href='/css/layout.css')
 	body
-		img(src="/images/fixedlogo.png", class="logoimage")
-		h1.logotext= "Mittereder Studios"
+		a(href="/")
+			img(src="/images/fixedlogo.png", class="logoimage")
 
 		ul.topnav
 			li
-				a(href="/") HOME
-			li.projects
-				a(href="/projects") PROJECTS
-			li
-				a(href="/about") ABOUT
+				a(href="/contact") CONTACT
 			li
 				a(href="/resume") RESUME
 			li
-				a(href="/contact") CONTACT
+				a(href="/about") ABOUT
+			li.projects
+				a(href="/projects") PROJECTS
+			li
+				a(href="/") HOME
 
 		block content
 	footer
