@@ -4,8 +4,24 @@ block append css
 	link(rel='stylesheet', type='text/css', href='/css/index.css')
 
 block content
-	.leftcontent
-		h2= "Mackenzie Mittereder"
-		h3= "Mobile App Developer"
+	p.name= "Mackenzie Mittereder"
+	p.title= "Software Engineer"
+
+	ul.social
+		li
+			a(href="https://www.youtube.com/channel/UCy0ozufXIKAtjRsTxD9VZNA")
+				img(src="/images/youtube.png", class="youtubelogo")
+		li
+			a(href="https://github.com/macmittereder")
+				img(src="/images/github.png", class="githublogo")
+		li
+			a(href="https://www.linkedin.com/in/mac-mittereder-7a248bb5/")
+				img(src="/images/linkedin.png", class="linkedinlogo")
+
+	.content
+		.leftcontent
+			p= "Attending Saint Vincent College in Latrobe, PA"
+		.rightcontent
+			p= "Employment"
 
 block append footer

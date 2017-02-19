@@ -1,13 +1,13 @@
 body {
 	height: 100%;
 	margin:0;
-	background-color: #FAEBD7;
+	background-color: #fff;
 }
 
 .logoimage{
 	height: 125px;
 	width: 125px;
-	position: fixed;
+	position: absolute;
 	float: left;
 	margin-left: 0;
 	margin-top: -15px;
@@ -28,26 +28,18 @@ ul.topnav {
 	margin-top: 0px;
   margin: 0;
   padding: 0;
-	border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   overflow:hidden;
-  background-color: #333;
+  background-color: #1976d2;
 }
 
 ul.topnav li {
-<<<<<<< HEAD
 	float: right;
-=======
-	float: left;
 	text-align: center;
->>>>>>> origin/master
 }
 
 ul.topnav li a {
   display: inline-block;
-  color: #f2f2f2;
+  color: #fff;
 	margin-top: 20px;
   text-align: center;
   padding: 14px 16px;
@@ -64,30 +56,6 @@ ul.topnav li.icon {
 	display: none;
 }
 
-ul.footer {
-	position: relative;
-	display: inline-block;
-	list-style-type: none;
-	text-align: center;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-ul.footer li {
-	float: left;
-	text-align: center;
-}
-
-ul.footer li a {
-	display: inline-block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-ul.footer li.icon {
-	display: none;
+address {
+	margin-top: -5px;
 }

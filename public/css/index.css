@@ -2,6 +2,72 @@ body{
   margin: 0;
 }
 
+p.name {
+  color: #212121;
+  text-align: center;
+  margin-top: -5px;
+  font-size: 50px;
+}
+
+p.title {
+  color: #212121;
+  margin-top: -50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.youtubelogo {
+	margin-top: -5px;
+	width: 75px;
+	height: 50px;
+}
+
+.githublogo {
+	margin-top: -5px;
+	width: 50px;
+	height: 50px;
+}
+
+.linkedinlogo {
+	margin-top: -5px;
+	width: 50px;
+	height: 50px;
+}
+
+ul.social {
+	position: relative;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+  left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.social li {
+	float: left;
+	text-align: center;
+}
+
+ul.social li a {
+	display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.social li.icon {
+	display: none;
+}
+
+.content {
+  margin-top: -30px;
+}
+
 .leftcontent {
   width: 45%;
   padding-left: 10px;
