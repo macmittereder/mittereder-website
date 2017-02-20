@@ -7,6 +7,13 @@ img.icon {
   height: 300px;
   width: 300px;
   position: absolute;
+  margin-top: -40px;
+  margin-left: 50px;
+}
+
+p.description {
+  margin-left: 400px;
+  margin-right: 50px;
 }
 
 footer {
