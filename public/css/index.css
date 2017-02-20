@@ -76,8 +76,20 @@ ul.social li.icon {
   position: relative;
 }
 
-.education {
+
+.contact {
   margin-top: 20px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.contact p.email {
+  margin-top: -20px;
+}
+
+.education {
+  margin-top: 70px;
   box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
