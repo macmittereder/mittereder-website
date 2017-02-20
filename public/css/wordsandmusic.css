@@ -1,0 +1,21 @@
+p.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+img.icon {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+}
+
+footer {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	padding: 10px;
+	margin-top: 600px;
+	bottom: 0px;
+}

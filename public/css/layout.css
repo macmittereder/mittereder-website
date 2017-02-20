@@ -9,7 +9,7 @@ body {
 	width: 125px;
 	position: absolute;
 	float: left;
-	margin-left: 0;
+	margin-left: 20px;
 	margin-top: -15px;
 	z-index: 2;
 }
@@ -35,6 +35,7 @@ ul.topnav {
 ul.topnav li {
 	float: right;
 	text-align: center;
+	padding-right: 20px;
 }
 
 ul.topnav li a {

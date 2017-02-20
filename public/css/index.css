@@ -69,26 +69,28 @@ ul.social li.icon {
 }
 
 .leftcontent {
-  width: 40%;
+  width: 46%;
   padding-left: 10px;
-  margin-left: 5%;
+  margin-left: 2%;
   float: left;
   position: relative;
 }
 
 .education {
-  margin-top: -30px;
+  margin-top: 20px;
   box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
-.education p.eduTitle {
+.education p.title {
   text-align: center;
   font-size: 30px;
+  color: #212121;
 }
 
 .education table {
-  margin-top: -35px;
+  margin-top: -25px;
+  width: 95%;
   table-layout: fixed;
   padding: 0;
   border-spacing: 0;
@@ -104,9 +106,14 @@ ul.social li.icon {
   line-height: 0;
 }
 
+.education p {
+  color: #575757;
+}
+
 p.schoolName {
   font-size: 20px;
   font-weight: bold;
+  color: #212121;
 }
 
 .education table.highschool {
@@ -114,11 +121,91 @@ p.schoolName {
 }
 
 .rightcontent {
-  width: 40%;
+  width: 46%;
   padding-right: 10px;
-  margin-right: 5%;
+  margin-right: 2%;
   float: right;
   position: relative;
+}
+
+.computerskills {
+  margin-top: 20px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.computerskills table{
+  text-align: center;
+  width: 95%;
+  table-layout: fixed;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.computerskills table, tr, td {
+  border: 2px;
+}
+
+.computerskills tr {
+  line-height: 0;
+}
+
+.computerskills p {
+  color: #575757;
+}
+
+.computerskills p.title {
+  text-align: center;
+  font-size: 30px;
+  color: #212121;
+}
+
+.computerskills p.subtitle {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.workexperience {
+  margin-top: 70px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.workexperience table {
+  width: 95%;
+  table-layout: fixed;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.workexperience table, tr, td {
+  border: 2px;
+}
+
+.workexperience tr {
+  line-height: 0;
+}
+
+.workexperience p {
+  color: #575757;
+}
+
+.workexperience td.title p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.workexperience p.title {
+  text-align: center;
+  font-size: 30px;
+  color: #212121;
 }
 
 footer {
@@ -128,6 +215,6 @@ footer {
 	width: 600px;
 	margin: auto;
 	padding: 10px;
-	margin-top: 600px;
+	margin-top: 880px;
 	bottom: 0px;
 }
