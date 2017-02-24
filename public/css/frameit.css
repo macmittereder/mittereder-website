@@ -1,19 +1,22 @@
 p.title {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: -5px;
 }
 
 img.icon {
   height: 300px;
   width: 300px;
   position: absolute;
-  margin-top: -40px;
-  margin-left: 50px;
+  margin-top: -70px;
+  margin-left: 40px;
 }
 
 p.description {
-  margin-left: 400px;
+  margin-left: 380px;
   margin-right: 50px;
+  margin-top: -20px;
+  font-size: 20px;
 }
 
 footer {
