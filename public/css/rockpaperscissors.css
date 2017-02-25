@@ -125,11 +125,11 @@ img.stats {
 }
 
 p.stats {
-    margin-left: 16%;
-    margin-right: 55%;
-    position: static;
-    margin-top: -25%;
-    font-size: 20px;
+  margin-left: 16%;
+  margin-right: 55%;
+  position: static;
+  margin-top: -25%;
+  font-size: 20px;
 }
 
 img.prefs {
@@ -143,11 +143,11 @@ img.prefs {
 }
 
 p.prefs {
-    margin-right: 16%;
-    margin-left: 55%;
-    position: static;
-    font-size: 20px;
-    margin-top: -7%;
+  margin-right: 16%;
+  margin-left: 55%;
+  position: static;
+  font-size: 20px;
+  margin-top: -7%;
 }
 
 footer {
