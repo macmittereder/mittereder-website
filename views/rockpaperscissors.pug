@@ -1,11 +1,11 @@
 extends layout
 
 block append css
-	link(rel='stylesheet', type='text/css', href='/css/frameit.css')
+	link(rel='stylesheet', type='text/css', href='/css/rockpaperscissors.css')
 
 block content
 	p.title= "Rock, Paper, Scissors"
-	img.icon(src="/images/dicon.png")
+	img.icon(src="/images/rpsicon.png")
 	p.description
 		empty This app was developed junior year of high school for Android using eclipse. The
 		idea of this app was a proof of concept to develop my first app and publish
@@ -14,4 +14,21 @@ block content
 		in an app setting.
 	hr.seperator
 
-	img.mainmenu(src="/images/rps1.png")
+	.content
+		.firstrow
+			img.mainmenu(src="/images/rps1.png")
+			p.mainmenu= "This view is the main menu that you are greeted with when opening the app."
+			img.singleplayer(src="/images/rps2.png")
+			p.singleplayer= "This is the single player view where you can make your selection off the bottom 3 choices."
+
+		.secondrow
+			img.playerselection(src="/images/rps6.png")
+			p.playerselection= "The player has made the choice of the scissors and the computer has chosen rock, so the person would lose in this case."
+			img.playerselection2(src="/images/rps5.png")
+			p.playerselection2= "This time the player chose rock and the computer had chosen scissors so the person would win"
+
+		.thirdrow
+			img.stats(src="/images/rps4.png")
+			p.stats= "This is the stats screen where all the stats are stored."
+			img.prefs(src="/images/rps3.png")
+			p.prefs= "This view is the prefences menu where you can change the font in game. You have the option to keep track of your stats and you can also clear stats data."
