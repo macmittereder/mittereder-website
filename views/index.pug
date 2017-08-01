@@ -4,208 +4,217 @@ block append css
 	link(rel='stylesheet', type='text/css', href='/css/index.css')
 
 block content
-	p.name= "Mackenzie Mittereder"
-	p.title= "Software Engineer"
+	.row
+		.col-md-12.text-center
+			h1 Mac Mittereder
+			h2 Software Engineer
+			
+	br
+		
+	.row
+		.col-md-12
+			ul.social
+				li
+					a(href="https://www.youtube.com/channel/UCy0ozufXIKAtjRsTxD9VZNA")
+						img.youtube(src="/images/youtube.png")
+				li
+					a(href="https://github.com/macmittereder")
+						img.socialImg(src="/images/github.png")
+				li
+					a(href="https://www.linkedin.com/in/mac-mittereder-7a248bb5/")
+						img.socialImg(src="/images/linkedin.png")
+	
+	.row
+		.col-md-6
+			.row
+				.col-md-12.text-center
+					h2 Contact
+					h3 Email: macmitt2300@gmail.com
+			.row
+				.col-md-12
+					h2.text-center Education
+					table.college
+						tr
+							td(colspan="2")
+								p.schoolName= "Saint Vincent College | Latrobe, PA | 2014 - Current"
+						tr
+							td(colspan="2")
+								p= "Major: Computing and Information Science"
+						tr
+							td(colspan="2")
+								hr
+						tr
+							td
+								p= "Courses Taken:"
+						tr
+							td
+								p= "-C++ II"
+							td
+								p= "-Server Side Programming"
+						tr
+							td
+								p= "-Computer Architecture and Operating Systems"
+							td
+								p= "-Data Structures"
+						tr
+							td
+								p= "-Database Concepts and Information Structures"
+							td
+								p= "-Discrete Structures II"
+						tr
+							td
+								p= "-Software Engineering"
+							td
+								p= "-Programming Languages"
+					table.highschool
+						tr
+							td(colspan="2")
+								p.schoolName= "Franklin Regional | Murrysville, PA | 2001 - 2014"
+						tr
+							td(colspan="2")
+								hr
+						tr
+							td
+								p= "Classes Taken:"
+						tr
+							td
+								p= "-AP Computer Science A & AB"
+							td
+								p= "-AP Enviromental Science"
+						tr
+							td
+								p= "-Honors Accounting"
+							td
+								p= "-Honors Calculus"
+						tr
+							td
+								p= "-Honors Physics"
+							td
+								p= "-Visual Basic"
+			
+		.col-md-6
+			.row
+				.col-md-12
+					h2.text-center Computer Skills
+					table
+						tr
+							td(colspan="6")
+								p.subtitle= "Computer Languages"
+						tr
+							td
+								p= "-C++"
+							td
+								p= "-CSS"
+							td
+								p= "-HTML"
+							td
+								p= "-Java"
+							td
+								p= "-Objective-C"
+							td
+								p= "-XML"
+						tr
+							td
+								p= "-C#"
+							td
+								p= "-JSON"
+							td
+								p= "-jQuery"
+							td
+								p= "-Python"
+							td
+								p= "-Javascript"
+							td
+								p= "-Node.js"
+						tr
+							td
+								p= "-XAML"
+							td
+								p= "-Swift"
+							td
+								p= "-PHP"
+							td
+								p= "-MySQL"
+							td
+								p= "-Visual Basic"
+							td
+								p= "-Pug"
+						tr
+							td(colspan="6")
+								hr
+					table
+						tr
+							td(colspan="5")
+								p.subtitle= "IDE's"
+						tr
+							td
+								p= "-Android Studio"
+							td
+								p= "-Dreamweaver"
+							td
+								p= "-IDLE"
+							td
+								p= "-Xamarin Studio"
+							td
+								p= "-Vim"
+						tr
+							td
+								p= "-Atom"
+							td
+								p= "-Visual Studio"
+							td
+								p= "-Xcode"
+							td
+								p= "-Eclipse"
+							td
+								p= "-Unity"
 
-	ul.social
-		li
-			a(href="https://www.youtube.com/channel/UCy0ozufXIKAtjRsTxD9VZNA")
-				img(src="/images/youtube.png", class="youtubelogo")
-		li
-			a(href="https://github.com/macmittereder")
-				img(src="/images/github.png", class="githublogo")
-		li
-			a(href="https://www.linkedin.com/in/mac-mittereder-7a248bb5/")
-				img(src="/images/linkedin.png", class="linkedinlogo")
-
-	.content
-		.leftcontent
-			.contact
-				p.title= "Contact"
-				p.email= "Email: macmitt2300@gmail.com"
-
-			.education
-				p.title= "Education"
-				table.college
-					tr
-						td(colspan="2")
-							p.schoolName= "Saint Vincent College | Latrobe, PA | 2014 - Current"
-					tr
-						td(colspan="2")
-							p= "Major: Computing and Information Science"
-					tr
-						td(colspan="2")
-							hr
-					tr
-						td
-							p= "Courses Taken:"
-					tr
-						td
-							p= "-C++ II"
-						td
-							p= "-Server Side Programming"
-					tr
-						td
-							p= "-Computer Architecture and Operating Systems"
-						td
-							p= "-Data Structures"
-					tr
-						td
-							p= "-Database Concepts and Information Structures"
-						td
-							p= "-Discrete Structures II"
-					tr
-						td
-							p= "-Software Engineering"
-						td
-							p= "-Programming Languages"
-				table.highschool
-					tr
-						td(colspan="2")
-							p.schoolName= "Franklin Regional | Murrysville, PA | 2001 - 2014"
-					tr
-						td(colspan="2")
-							hr
-					tr
-						td
-							p= "Classes Taken:"
-					tr
-						td
-							p= "-AP Computer Science A & AB"
-						td
-							p= "-AP Enviromental Science"
-					tr
-						td
-							p= "-Honors Accounting"
-						td
-							p= "-Honors Calculus"
-					tr
-						td
-							p= "-Honors Physics"
-						td
-							p= "-Visual Basic"
-
-		.rightcontent
-			.computerskills
-				p.title= "Computer Skills"
-				table
-					tr
-						td(colspan="6")
-							p.subtitle= "Computer Languages"
-					tr
-						td
-							p= "-C++"
-						td
-							p= "-CSS"
-						td
-							p= "-HTML"
-						td
-							p= "-Java"
-						td
-							p= "-Objective-C"
-						td
-							p= "-XML"
-					tr
-						td
-							p= "-C#"
-						td
-							p= "-JSON"
-						td
-							p= "-jQuery"
-						td
-							p= "-Python"
-						td
-							p= "-Javascript"
-						td
-							p= "-Node.js"
-					tr
-						td
-							p= "-XAML"
-						td
-							p= "-Swift"
-						td
-							p= "-PHP"
-						td
-							p= "-MySQL"
-						td
-							p= "-Visual Basic"
-						td
-							p= "-Pug"
-					tr
-						td(colspan="6")
-							hr
-				table
-					tr
-						td(colspan="5")
-							p.subtitle= "IDE's"
-					tr
-						td
-							p= "-Android Studio"
-						td
-							p= "-Dreamweaver"
-						td
-							p= "-IDLE"
-						td
-							p= "-Xamarin Studio"
-						td
-							p= "-Vim"
-					tr
-						td
-							p= "-Atom"
-						td
-							p= "-Visual Studio"
-						td
-							p= "-Xcode"
-						td
-							p= "-Eclipse"
-						td
-							p= "-Unity"
-
-			.workexperience
-				p.title= "Work Experience"
-				table
-					tr
-						td.title
-							p= "ATS Evolution | Software Engineer Intern | 2/2017 - Current"
-					tr
-						td
-							p= "Various projects"
-					tr
-						td
-							hr
-					tr
-						td.title
-							p= "TekSystems | Deployment Technician | 7/2015 - Current"
-					tr
-						td
-							p= "Moving computers from the PNC complex in Pittsburgh to their new PNC tower."
-					tr
-						td
-							hr
-					tr
-						td.title
-							p= "Blast Off Apps | Contractor | 4/2015 - 7/2016"
-					tr
-						td
-							p= "Developed mobile apps for various clients on Android and iOS."
-					tr
-						td
-							hr
-					tr
-						td.title
-							p= "Moe's Southwest Grill | Shift Manager | 11/2013 - Current"
-					tr
-						td
-							p= "Added to my leadership experience in a team based enviroment and training coworkers."
-							p= "Increased my social skills and patience with customers and coworkers."
-					tr
-						td
-							hr
-					tr
-						td.title
-							p= "Walkers Pet Hotail | Shift Manager | 5/2011 - 6/2013"
-					tr
-						td
-							p= "Responsible for at least two other employees a shift."
+			.row
+				.col-md-12
+					h2.text-center Work Experience
+					table
+						tr
+							td.title
+								p= "ATS Evolution | Software Engineer Intern | 2/2017 - Current"
+						tr
+							td
+								p= "Various projects"
+						tr
+							td
+								hr
+						tr
+							td.title
+								p= "TekSystems | Deployment Technician | 7/2015 - Current"
+						tr
+							td
+								p= "Moving computers from the PNC complex in Pittsburgh to their new PNC tower."
+						tr
+							td
+								hr
+						tr
+							td.title
+								p= "Blast Off Apps | Contractor | 4/2015 - 7/2016"
+						tr
+							td
+								p= "Developed mobile apps for various clients on Android and iOS."
+						tr
+							td
+								hr
+						tr
+							td.title
+								p= "Moe's Southwest Grill | Shift Manager | 11/2013 - Current"
+						tr
+							td
+								p= "Added to my leadership experience in a team based enviroment and training coworkers."
+								p= "Increased my social skills and patience with customers and coworkers."
+						tr
+							td
+								hr
+						tr
+							td.title
+								p= "Walkers Pet Hotail | Shift Manager | 5/2011 - 6/2013"
+						tr
+							td
+								p= "Responsible for at least two other employees a shift."
 
 block append footer
