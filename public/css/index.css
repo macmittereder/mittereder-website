@@ -1,37 +1,19 @@
-body{
-  margin: 0;
+.youtube{
+	width: 75px !important;
+  height: 50px;
 }
 
-p.name {
-  color: #212121;
-  text-align: center;
-  margin-top: -5px;
-  font-size: 50px;
-}
-
-p.title {
-  color: #212121;
-  margin-top: -50px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.youtubelogo {
-	margin-top: -5px;
-	width: 75px;
-	height: 50px;
-}
-
-.githublogo {
-	margin-top: -5px;
+.socialImg{
 	width: 50px;
-	height: 50px;
+  height: 50px
 }
 
-.linkedinlogo {
-	margin-top: -5px;
-	width: 50px;
-	height: 50px;
+.right {
+	padding-left: 50px;
+}
+
+.left {
+	padding-right: 50px;
 }
 
 ul.social {
@@ -44,6 +26,7 @@ ul.social {
 	transform: translate(-50%, -50%);
   padding: 0;
   overflow: hidden;
+	margin-bottom: -50px;
 }
 
 ul.social li {
@@ -64,18 +47,10 @@ ul.social li.icon {
 	display: none;
 }
 
-.content {
-  margin-top: -30px;
+.container {
+  width: 95%;
+	margin-top: -50px;
 }
-
-.leftcontent {
-  width: 46%;
-  padding-left: 10px;
-  margin-left: 2%;
-  float: left;
-  position: relative;
-}
-
 
 .contact {
   margin-top: 20px;
@@ -89,37 +64,21 @@ ul.social li.icon {
 }
 
 .education {
-  margin-top: 70px;
   box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
   transition: 0.3s;
-}
-
-.education p.title {
-  text-align: center;
-  font-size: 30px;
-  color: #212121;
+	margin-top: 20px;
 }
 
 .education table {
-  margin-top: -25px;
   width: 95%;
   table-layout: fixed;
   padding: 0;
   border-spacing: 0;
   border-collapse: collapse;
-  margin: 0 auto;
 }
 
-.education table, tr, td {
-  border: 2px;
-}
-
-.education tr {
-  line-height: 0;
-}
-
-.education p {
-  color: #575757;
+.education hr {
+	color: black;
 }
 
 p.schoolName {
@@ -132,13 +91,6 @@ p.schoolName {
   margin-top: 20px;
 }
 
-.rightcontent {
-  width: 46%;
-  padding-right: 10px;
-  margin-right: 2%;
-  float: right;
-  position: relative;
-}
 
 .computerskills {
   margin-top: 20px;
@@ -153,25 +105,6 @@ p.schoolName {
   padding: 0;
   border-spacing: 0;
   border-collapse: collapse;
-  margin: 0 auto;
-}
-
-.computerskills table, tr, td {
-  border: 2px;
-}
-
-.computerskills tr {
-  line-height: 0;
-}
-
-.computerskills p {
-  color: #575757;
-}
-
-.computerskills p.title {
-  text-align: center;
-  font-size: 30px;
-  color: #212121;
 }
 
 .computerskills p.subtitle {
@@ -182,7 +115,7 @@ p.schoolName {
 }
 
 .workexperience {
-  margin-top: 70px;
+  margin-top: 20px;
   box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
   transition: 0.3s;
 }
@@ -193,30 +126,11 @@ p.schoolName {
   padding: 0;
   border-spacing: 0;
   border-collapse: collapse;
-  margin: 0 auto;
-}
-
-.workexperience table, tr, td {
-  border: 2px;
-}
-
-.workexperience tr {
-  line-height: 0;
-}
-
-.workexperience p {
-  color: #575757;
 }
 
 .workexperience td.title p {
   font-size: 20px;
   font-weight: bold;
-  color: #212121;
-}
-
-.workexperience p.title {
-  text-align: center;
-  font-size: 30px;
   color: #212121;
 }
 
@@ -227,6 +141,5 @@ footer {
 	width: 600px;
 	margin: auto;
 	padding: 10px;
-	margin-top: 880px;
 	bottom: 0px;
 }
