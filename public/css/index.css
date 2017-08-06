@@ -8,6 +8,14 @@
   height: 50px
 }
 
+.right {
+	padding-left: 50px;
+}
+
+.left {
+	padding-right: 50px;
+}
+
 ul.social {
 	position: relative;
 	display: inline-block;
@@ -18,6 +26,7 @@ ul.social {
 	transform: translate(-50%, -50%);
   padding: 0;
   overflow: hidden;
+	margin-bottom: -50px;
 }
 
 ul.social li {
@@ -39,7 +48,8 @@ ul.social li.icon {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
+	margin-top: -50px;
 }
 
 .contact {
