@@ -133,13 +133,3 @@ p.schoolName {
   font-weight: bold;
   color: #212121;
 }
-
-footer {
-	position: relative;
-	display: block;
-	text-align: center;
-	width: 600px;
-	margin: auto;
-	padding: 10px;
-	bottom: 0px;
-}
