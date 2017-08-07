@@ -5,14 +5,55 @@ block append css
 	link(rel='stylesheet', type='text/css', href='/css/projectlayout.css')
 
 block content
-	p.title= "Life Counter"
-	img.icon(src="/images/lcicon.png")
-	p.description
-		empty Created freshman year of college for Android using Android Studio. The idea of this app came from plyaing the card game
-		Magic the Gathering with friends and either moving our life counter dice or not having the correct token cards when playing.
-		This app is a solution to these problems by keeping track of life points and token cards for each player. Another feature
-		of the app is the customability of screen orientation. The screen can either be portrait facing one player or the one side can
-		be flipped so both players can adjust thier own life points and tokens. The feature that makes this app unique is the ability
-		to save game and view how each player lost life pionts. THis was achieved by creating a text file and writing output to it when
-		the points were changed. When the game is reviewed the points are clumped together based on player, if points were lost or gained
-		and when it happened.
+	.row
+		.col-md-12.text-center
+			h1 Life Counter
+	.row 
+		.col-md-2
+			img.icon(src="/images/lcicon.png")
+		.col-md-10
+			h3 Created freshman year of college for Android using Android Studio. The idea of this app came from plyaing the card game
+				| Magic the Gathering with friends and either moving our life counter dice or not having the correct token cards when playing.
+				| This app is a solution to these problems by keeping track of life points and token cards for each player. Another feature
+				| of the app is the customability of screen orientation. The screen can either be portrait facing one player or the one side can
+				| be flipped so both players can adjust thier own life points and tokens. The feature that makes this app unique is the ability
+				| to save game and view how each player lost life pionts. THis was achieved by creating a text file and writing output to it when
+				| the points were changed. When the game is reviewed the points are clumped together based on player, if points were lost or gained
+				| and when it happened.
+	hr.seperator
+	.content
+		.row
+			.col-md-2
+				img.preview(src="/images/lc1.png")
+			.col-md-3
+			.col-md-2
+			.col-md-3
+			.col-md-2
+				img.preview(src="/images/lc2.png")
+		br
+		.row
+			.col-md-2
+				img.preview(src="/images/lc3.png")
+			.col-md-3
+			.col-md-2
+			.col-md-3
+			.col-md-2
+				img.preview(src="/images/lc4.png")
+		br
+		.row
+			.col-md-2
+				img.preview(src="/images/lc5.png")
+			.col-md-3
+			.col-md-2
+			.col-md-3
+			.col-md-2
+				img.preview(src="/images/lc6.png")
+		br
+		.row
+			.col-md-2
+				img.preview(src="/images/lc8.png")
+			.col-md-3
+			.col-md-2
+			.col-md-3
+			.col-md-2
+				img.preview(src="/images/lc9.png")
