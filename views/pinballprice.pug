@@ -2,12 +2,20 @@ extends layout
 
 block append css
 	link(rel='stylesheet', type='text/css', href='/css/pinballprice.css')
+	link(rel='stylesheet', type='text/css', href='/css/projectlayout.css')
 
 block content
-	p.title= "Pinball Price"
-	img.icon(src="/images/ppicon.png")
-	p.description
-		empty This app was a contractor project through Blast Off Apps developed for Android with Android Studio and iOS with Xcode.
-		Pinballprice.com is the worlds largest selection of pinball machines to either buy or find more information on a specific one. The
-		app displays their website using a slide out menu for navigation and a webview. Their webpages were also modified for the app to
-		remove the navigation bar and padding from the side upon clients request.
+	.row
+		.col-md-12.text-center
+			h1 Pinball Price
+	.row 
+		.col-md-2
+			img.icon(src="/images/ppicon.png")
+		.col-md-10
+			h3 This app was a contractor project through Blast Off Apps developed for Android with Android Studio and iOS with Xcode.
+				| Pinballprice.com is the worlds largest selection of pinball machines to either buy or find more information on a specific one. The
+				| app displays their website using a slide out menu for navigation and a webview. Their webpages were also modified for the app to
+				| remove the navigation bar and padding from the side upon clients request.
+	hr.seperator
+
+	.content
