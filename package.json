@@ -1,0 +1,11 @@
+{
+  "name": "Mittereder-Website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
