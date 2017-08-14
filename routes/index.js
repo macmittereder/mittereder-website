@@ -1,7 +1,6 @@
 var express = require('express');
-// var path = require('path');
-// var fs = require('fs');
 var sassMiddleware = require('../middleware/sass');
+// compile sass in middleware for each page
 
 var router = express.Router();
 

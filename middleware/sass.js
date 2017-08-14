@@ -1,8 +1,10 @@
+// require node sass
 var sass = require('node-sass');
 var path = require('path');
 var fs = require('fs');
 
 module.exports = function (req, res, next) {
+  //import main.sass in dir styles
   sass.render({
     data: '@import "main"',
     includePaths: [path.join(__dirname, '../styles/')],
@@ -10,7 +12,7 @@ module.exports = function (req, res, next) {
   }, function(err, result) {
     if(err)
       next(err);
-
+    //write the main.css file
     fs.writeFile('public/css/main.css', result.css, function(err){
       if(err)
         next(err);
