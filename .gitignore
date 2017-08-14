@@ -1,1 +1,4 @@
 /node_modules
+
+#Sass files
+/public/css/main.css
