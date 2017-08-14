@@ -1,1 +1,8 @@
-@import 'settings/colors';
+//Base components
+@import 'base/colors';
+
+//page layout
+@import 'layout/buttons.scss';
+@import 'layout/nav.scss';
+@import 'layout/buttons.scss';
+@import 'layout/footer.scss';
