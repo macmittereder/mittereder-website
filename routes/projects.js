@@ -2,43 +2,43 @@ var express = require('express');
 
 var router = express.Router();
 
-router.get('/', function (req, res, next) {
+router.get('/', (req, res, next) => {
    res.render('projects');
 });
 
-router.get('/fastmoviephotos', function (req, res, next) {
+router.get('/fastmoviephotos', (req, res, next) => {
   res.render('fastmoviephotos');
 });
 
-router.get('/lifecounter', function (req, res, next) {
+router.get('/lifecounter', (req, res, next) => {
   res.render('lifecounter');
 });
 
-router.get('/franklinregional', function (req, res, next) {
+router.get('/franklinregional', (req, res, next) => {
   res.render('franklinregional');
 });
 
-router.get('/pinballprice', function (req, res, next) {
+router.get('/pinballprice', (req, res, next) => {
   res.render('pinballprice');
 });
 
-router.get('/wordsandmusic', function(req, res, next) {
+router.get('/wordsandmusic', (req, res, next) => {
   res.render('wordsandmusic');
 });
 
-router.get('/vehicleapp', function(req, res, next) {
+router.get('/vehicleapp', (req, res, next) => {
   res.render('vehicleapp');
 });
 
-router.get('/frameit', function(req, res, next) {
+router.get('/frameit', (req, res, next) => {
   res.render('frameit');
 });
 
-router.get('/graphgame', function(req, res, next) {
+router.get('/graphgame', (req, res, next) => {
   res.render('graphgame');
 });
 
-router.get('/rockpaperscissors', function(req, res, next) {
+router.get('/rockpaperscissors', (req, res, next) => {
   res.render('rockpaperscissors');
 });
 
