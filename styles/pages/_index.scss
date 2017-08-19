@@ -1,0 +1,81 @@
+p.schoolName {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.contact {
+  margin-top: 20px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: center;
+
+  & p.email {
+    margin-top: -20px;
+  }
+}
+
+.education {
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+	margin-top: 20px;
+
+  & table {
+    width: 95%;
+    table-layout: fixed;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    &.highschool {
+      margin-top: 20px;
+    }
+  }
+
+  & hr {
+    color: black;
+  }
+}
+
+.computerskills {
+  margin-top: 20px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  & table {
+
+      text-align: center;
+      width: 95%;
+      table-layout: fixed;
+      padding: 0;
+      border-spacing: 0;
+      border-collapse: collapse;
+  }
+
+  & p.subtitle {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+  }
+}
+
+.workexperience {
+  margin-top: 20px;
+  box-shadow: 0 4px 20px 3px rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+  & table {
+    width: 95%;
+    table-layout: fixed;
+    padding: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+
+  & td.title p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #212121;
+  }
+}
