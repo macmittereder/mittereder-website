@@ -1,11 +1,16 @@
+//addins
+@import 'addins/bootstrap';
+
 //base components
 @import 'base/colors';
+@import 'base/position';
 
 //page components
 @import 'components/images';
 
 //page layout
-@import 'layout/buttons.scss';
-@import 'layout/nav.scss';
-@import 'layout/buttons.scss';
-@import 'layout/footer.scss';
+@import 'layout/buttons';
+@import 'layout/nav';
+@import 'layout/footer';
+
+//mixins

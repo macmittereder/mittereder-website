@@ -8,10 +8,14 @@ module.exports = function (req, res, next) {
   sass.render({
     data: '@import "main"',
     includePaths: [path.join(__dirname, '../styles/')],
-    outFile: 'public/css/main.css'
+    outFile: 'public/css/main.css',
+    precision: 8
   }, function(err, result) {
-    if(err)
+    if(err) {
+      console.log(err)
       next(err);
+    }
+    
     //write the main.css file
     fs.writeFile('public/css/main.css', result.css, function(err){
       if(err)
