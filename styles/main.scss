@@ -15,8 +15,10 @@
 @import 'layout/nav';
 @import 'layout/footer';
 
+//mixins
+@import 'mixins/card';
+
 // custom page layouts
 @import 'pages/index';
 @import 'pages/project-layout';
-
-//mixins
+@import 'pages/project';
