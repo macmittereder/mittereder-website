@@ -7,10 +7,16 @@
 
 //page components
 @import 'components/images';
+@import 'components/container';
+@import 'components/lists';
 
 //page layout
 @import 'layout/buttons';
 @import 'layout/nav';
 @import 'layout/footer';
+
+// custom page layouts
+@import 'pages/index';
+@import 'pages/project-layout';
 
 //mixins
