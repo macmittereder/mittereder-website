@@ -1,8 +1,5 @@
 extends layout
 
-block append css
-	link(rel='stylesheet', type='text/css', href='/css/index.css')
-
 block content
 	.wrapper
 		.row
@@ -27,7 +24,7 @@ block content
 								
 		.container
 			.row
-				.col-md-6.col-xs-6.left
+				.col-md-6.col-xs-6.container-left
 					.row
 						.col-md-12.text-center.contact
 							h2 Contact
@@ -94,7 +91,7 @@ block content
 									td
 										p= "-Visual Basic"
 					
-				.col-md-6.col-xs-6.right
+				.col-md-6.col-xs-6.container-right
 					.row
 						.col-md-12.col-xs-12.computerskills
 							h2.text-center Computer Skills
