@@ -1,0 +1,19 @@
+p {
+  &.black {
+    color: #000;
+  }
+
+  &.gray {
+    color: $primary-color;
+  }
+}
+
+h4 {
+  &.black {
+    color: #000;
+  }
+
+  &.gray {
+    color: $primary-color;
+  }
+}
