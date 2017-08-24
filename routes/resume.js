@@ -1,8 +1,9 @@
 var express = require('express');
+var sassMiddleware = require('../middleware/sass');
 
 var router = express.Router();
 
-router.get('/', (req, res, next) => {
+router.get('/', sassMiddleware, (req, res, next) => {
    res.render('resume');
 });
 
