@@ -1,87 +1,84 @@
 extends layout
 
-block append css
-	link(rel='stylesheet', type='text/css', href='/css/projects.css')
-
 block content
-	h1.text-center Projects
-	
 	.container
 		.row
-			.col-md-3
+			.col-md-12
+				h1.text-center Projects
+	
+		.row
+			.col-md-3.col-xs-6
 				a(href="/projects/frameit")
 					.card
 						img.card(src="/images/fiicon.png")
 						.container
-							h4= "FrameIt"
-							p= "Applies different borders to user's photos then can save the image and post it to Twitter or Facebook."
-			.col-md-3
+							h4.black.underline FrameIt
+							p.black Applies different borders to user's photos then can save the image and post it to Twitter or Facebook.
+			.col-md-3.col-xs-6
 				a(href="/projects/franklinregional")
 					.card
 						img.card(src="/images/fricon.png")
 						.container
-							h4= "Franklin Regional"
-							p= "Notifies users about delays and cancellations using push notifications from Parse"
-			.col-md-3
+							h4.black.underline Franklin Regional
+							p.black Notifies users about delays and cancellations using push notifications from Parse.
+			.col-md-3.col-xs-6
 				a(href="/projects/lifecounter")
 					.card
 						img.card(src="/images/lcicon.png")
 						.container
-							h4= "Life Counter"
-							p= "A companion app to the card game Magic the Gathering."
-			.col-md-3
+							h4.black.underline Life Counter
+							p.black A companion app to the card game Magic the Gathering.
+			.col-md-3.col-xs-6
 				a(href="/projects/pinballprice")
 					.card
 						img.card(src="/images/ppicon.png")
 						.container
-							h4= "Pinball Price"
-							p= "Webview app of PinballPrice.com"
-		
-		br
-		
+							h4.black.underline Pinball Price
+							p.black Webview app of PinballPrice.com
+							br                                                                                                                                                                                      
 		.row
-			.col-md-3
+			.col-md-3.col-xs-6
 				a(href="/projects/fastmoviephotos")
 					.card
 						img.card(src="/images/fmpicon.png")
 						.container
-							h4= "Fast Movie Photos"
-							p= "Retrieves the client’s videos from a Parse database and allows you play it at various speeds."
-			.col-md-3
+							h4.black.underline Fast Movie Photos
+							p.black Retrieves the client’s videos from a Parse database and allows you play it at various speeds.
+							br                                                                                                                                                                                      
+			.col-md-3.col-xs-6
 				a(href="/projects/graphgame")
 					.card
 						img.card(src="/images/dicon.png")
 						.container
-							h4= "Graph Game"
-							p= "Uses graph theory for the different layouts while two players try to move their pebbles to win."
-			.col-md-3
+							h4.black.underline Graph Game
+							p.black Uses graph theory for the different layouts while two players try to move their pebbles to win.
+							br                                                                                                                                                                                      
+			.col-md-3.col-xs-6
 				a(href="/projects/wordsandmusic")
 					.card
 						img.card(src="/images/wamicon.png")
 						.container
-							h4= "Words and Music"
-							p= "Displays their bookstore inventory using a Parse database and allows users to use PayPal to purchase books."
-			.col-md-3
+							h4.black.underline Words and Music
+							p.black Displays their bookstore inventory using a Parse database and allows users to use PayPal to purchase books.
+			.col-md-3.col-xs-6
 				a(href="/projects/vehicleapp")
 					.card
 						img.card(src="/images/dicon.png")
 						.container
-							h4= "Vehicle App"
-							p= "Stores vehicle information for client using a Parse database so they can add vehicles and view them."
-		
-		br
-		
+							h4.black.underline Vehicle App
+							p.black Stores vehicle information for client using a Parse database so they can add vehicles and view them.
+							br                                                                                                                                                                                      
 		.row
-			.col-md-3
+			.col-md-3.col-xs-6
 				//- TODO: Empty
-			.col-md-3
+			.col-md-3.col-xs-6
 				a(href="/projects/rockpaperscissors")
 					.card
 						img.card(src="/images/rpsicon.png")
 						.container
-							h4= "Rock, Paper, Scissors"
-							p= "A simple rock, paper, scissors game."
-			.col-md-3
-				//- TODO: Empty for now
-			.col-md-3
+							h4.black.underline Rock, Paper, Scissors
+							p.black A simple rock, paper, scissors game.
+			.col-md-3.col-xs-6
+				//- TODO: Empty
+			.col-md-3.col-xs-6
 				//- TODO: Empty

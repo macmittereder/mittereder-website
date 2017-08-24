@@ -1,11 +1,24 @@
 .container {
   width: 95%;
-  margin-top: -50px;
 
   &-right {
-    padding-left: 50px;
+    padding-left: 40px;
   }
   &-left {
-    padding-right: 50px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+
+    &-right {
+      padding-left: 0px;
+      margin-left: 15px;
+    }
+    &-left {
+      padding-right: 0px;
+    }
   }
 }
