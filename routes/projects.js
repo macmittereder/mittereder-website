@@ -3,43 +3,43 @@ var sassMiddleware = require('../middleware/sass');
 
 var router = express.Router();
 
-router.get('/', sassMiddleware, (req, res, next) => {
+router.get('/', sassMiddleware, function (req, res, next) {
    res.render('projects');
 });
 
-router.get('/fastmoviephotos', (req, res, next) => {
+router.get('/fastmoviephotos', function (req, res, next) {
   res.render('fastmoviephotos');
 });
 
-router.get('/lifecounter', (req, res, next) => {
+router.get('/lifecounter', function (req, res, next) {
   res.render('lifecounter');
 });
 
-router.get('/franklinregional', (req, res, next) => {
+router.get('/franklinregional', function (req, res, next) {
   res.render('franklinregional');
 });
 
-router.get('/pinballprice', (req, res, next) => {
+router.get('/pinballprice', function (req, res, next) {
   res.render('pinballprice');
 });
 
-router.get('/wordsandmusic', (req, res, next) => {
+router.get('/wordsandmusic', function (req, res, next) {
   res.render('wordsandmusic');
 });
 
-router.get('/vehicleapp', (req, res, next) => {
+router.get('/vehicleapp', function (req, res, next) {
   res.render('vehicleapp');
 });
 
-router.get('/frameit', (req, res, next) => {
+router.get('/frameit', function (req, res, next) {
   res.render('frameit');
 });
 
-router.get('/graphgame', (req, res, next) => {
+router.get('/graphgame', function (req, res, next) {
   res.render('graphgame');
 });
 
-router.get('/rockpaperscissors', (req, res, next) => {
+router.get('/rockpaperscissors', function (req, res, next) {
   res.render('rockpaperscissors');
 });
 
