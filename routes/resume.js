@@ -3,7 +3,7 @@ var sassMiddleware = require('../middleware/sass');
 
 var router = express.Router();
 
-router.get('/', sassMiddleware, (req, res, next) => {
+router.get('/', sassMiddleware, function (req, res, next) {
    res.render('resume');
 });
 
