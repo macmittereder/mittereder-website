@@ -4,7 +4,7 @@ var sassMiddleware = require('../middleware/sass');
 var router = express.Router();
 
 router.get('/', sassMiddleware, function (req, res, next) {
-   res.render('resume');
+   res.render('resume', {title: "Mittereder Studios - Resume"});
 });
 
 module.exports = router;
