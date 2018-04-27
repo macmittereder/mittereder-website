@@ -43,4 +43,8 @@ router.get('/rockpaperscissors', function (req, res, next) {
   res.render('rockpaperscissors', {title: "Mittereder Studios - Rock Paper Scissors"});
 });
 
+router.get('/gradez', function(req, res, next) {
+  res.render('gradez', {title: "Mittereder Studios - Gradez"});
+});
+
 module.exports = router;
