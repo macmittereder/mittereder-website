@@ -1,3 +1,24 @@
 .card {
   @include card;
 }
+
+$list: gz, fr, lc, fi, fmp, gg, pp, rps, wam, d;
+@each $name in $list {
+  .#{$name}-card-image {
+    &.mdl-card {
+      width: 100%;
+      height: 256px;
+      background: url('/images/#{$name}/#{$name}icon.png') center / cover;
+    }
+    &>.mdl-card__actions {
+      height: 52px;
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.2);
+    }
+    &__filename {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

@@ -17902,3 +17902,153 @@ img.preview {
   margin-bottom: 20px; }
   .card:hover {
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2); }
+
+.gz-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/gz/gzicon.png") center/cover; }
+
+.gz-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.gz-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.fr-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/fr/fricon.png") center/cover; }
+
+.fr-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.fr-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.lc-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/lc/lcicon.png") center/cover; }
+
+.lc-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.lc-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.fi-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/fi/fiicon.png") center/cover; }
+
+.fi-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.fi-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.fmp-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/fmp/fmpicon.png") center/cover; }
+
+.fmp-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.fmp-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.gg-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/gg/ggicon.png") center/cover; }
+
+.gg-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.gg-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.pp-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/pp/ppicon.png") center/cover; }
+
+.pp-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.pp-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.rps-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/rps/rpsicon.png") center/cover; }
+
+.rps-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.rps-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.wam-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/wam/wamicon.png") center/cover; }
+
+.wam-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.wam-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.d-card-image.mdl-card {
+  width: 100%;
+  height: 256px;
+  background: url("/images/d/dicon.png") center/cover; }
+
+.d-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2); }
+
+.d-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
