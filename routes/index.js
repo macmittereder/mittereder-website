@@ -1,10 +1,10 @@
 var express = require('express');
-var sassMiddleware = require('../middleware/sass');
+//var sassMiddleware = require('../middleware/sass');
 // compile sass in middleware for each page
 
 var router = express.Router();
 
-router.get('/', sassMiddleware, function (req, res) {
+router.get('/', function (req, res) {
   res.render('index', {title: "Mittereder Studios"});
 });
 

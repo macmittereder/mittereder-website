@@ -1,9 +1,9 @@
 var express = require('express');
-var sassMiddleware = require('../middleware/sass');
+// var sassMiddleware = require('../middleware/sass');
 
 var router = express.Router();
 
-router.get('/', sassMiddleware, function (req, res, next) {
+router.get('/', function (req, res, next) {
    res.render('projects', {title: "Mittereder Studios - Projects"});
 });
 
