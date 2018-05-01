@@ -22,4 +22,16 @@ img {
     height: 1294px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+
+  &.gradez {
+    &-database-structure {
+      width: 100%;
+      height: 100%;
+    }
+    
+    &-database-security {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
