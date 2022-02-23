@@ -17,6 +17,6 @@ app.use('/mah', rMittereders);
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(8081, function() {
-  console.log("Ready to go! Listening on port 8081.");
+app.listen(80, function() {
+  console.log("Ready to go! Listening on port 80.");
 });
