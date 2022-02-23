@@ -4,8 +4,8 @@ html
 	head
 		title= title
 		block css
-			link(rel='stylesheet', type='text/css', href='/css/main.min.css')
-			link(rel='stylesheet', type='text/css', href='/css/main.min.css.map')
+			link(rel='stylesheet', type='text/css', href='/css/mitteredersMain.css')
+			link(rel='stylesheet', type='text/css', href='/css/mitteredersMain.css.map')
 				
 	body
 		//- Navigation Bar
@@ -14,13 +14,18 @@ html
 
 		ul.topnav
 			li
-				a(href="https://www.linkedin.com/in/mackenzie-mittereder/") LINKEDIN
+				ul
+					li
+						a(href="/mah") Guide
+					li
+						a(href="/mah") FAQ
 			li
-				a(href="https://github.com/macmittereder") GITHUB
-			li
-				a(href="/projects") PROJECTS
-			li
-				a(href="/") HOME
+				ul
+					li
+						a(href="/mah") Our Story
+					li
+						a(href="/mah") Home
+					
 
 		block content	
 			
@@ -31,4 +36,4 @@ html
 			script(src="/js/material/material.min.js")
 			
 		hr
-		address= "Copyright 2022 All Rights Reserved www.mittereder.com"
+		address= "Copyright 2019 All Rights Reserved www.mittereder.com"
