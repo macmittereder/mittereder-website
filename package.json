@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node app.js",
-    "init": "npm i -g express && npm i -g windows-build-tools && npm i -g build-tools",
-    "install": "npm i",
-    "update": "npm update --save/--save-dev -f"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "^4.17.3",
