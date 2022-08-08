@@ -26,7 +26,7 @@ const GraphGame = () => {
       <ProjectRow
         section1={{
           image: img1,
-          text: `This is the menu users are greated with when opening the app. From this menu users can start the game and pick which map they want to play.`,
+          text: `This is the menu users are greeted with when opening the app. From this menu users can start the game and pick which map they want to play.`,
         }}
         section2={{
           image: img2,

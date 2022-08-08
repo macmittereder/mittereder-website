@@ -41,7 +41,7 @@ const Gradez = () => {
           <h2 style={styles.title}>Abstract</h2>
           <p>
             Students often have trouble keeping track of grades and some
-            teachers don’t use the tools provided to post grades onlinefor the
+            teachers don’t use the tools provided to post grades online for the
             students to view. Gradez is a mobile application developed for the
             Android platform to solve this dilemma. This application calculates
             class grades that are either accumulative points or in weighted
@@ -68,9 +68,9 @@ const Gradez = () => {
               over the years and through being a contractor.
             </li>
             <li>
-              Firebase, a cloud-based databased, is used so users will never
-              lose their information and can login from any Android device to
-              view their grades.
+              Firebase, a cloud-based database, is used so users will never lose
+              their information and can login from any Android device to view
+              their grades.
             </li>
             <li>
               This Android application specializes in calculating students

@@ -48,7 +48,7 @@ const RPS = () => {
         }}
         section2={{
           image: img6,
-          text: `This view is the prefences menu where you can change the font in game. You have the option to keep track of your stats and you can also clear stats data.`,
+          text: `This view is the preferences menu where you can change the font in game. You have the option to keep track of your stats and you can also clear stats data.`,
         }}
       />
     </div>

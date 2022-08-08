@@ -29,7 +29,7 @@ const FranklinRegional = () => {
         }}
         section2={{
           image: img2,
-          text: `The main menu slides out from the side by either a swipe geasture or by tappig the icon in the top left corner.`,
+          text: `The main menu slides out from the side by either a swipe gesture or by tapping the icon in the top left corner.`,
         }}
       />
       <ProjectRow
@@ -45,7 +45,7 @@ const FranklinRegional = () => {
       <ProjectRow
         section1={{
           image: img5,
-          text: `This is an exmample of the user navigating to one of the elementary school's webpage.`,
+          text: `This is an example of the user navigating to one of the elementary school's webpage.`,
         }}
         section2={{
           image: img6,

@@ -33,7 +33,7 @@ const LifeCounter = () => {
       <ProjectRow
         section1={{
           image: img1,
-          text: `This is the main display for the app. The life counter is located in the middle of the screen with a displayand an 'Add Token' button for each player.`,
+          text: `This is the main display for the app. The life counter is located in the middle of the screen with a display and an 'Add Token' button for each player.`,
         }}
         section2={{
           image: img2,
