@@ -8,15 +8,18 @@ import Background from "./Components/Nav/Background";
 import { Fragment, useState } from "react";
 
 const App = () => {
-  const [pageState, setPageState] = useState("Projects");
+  const [pageState, setPageState] = useState("Home");
+  const [mainMenu, setMainMenu] = useState(true);
 
   const pageStateHandler = (newState) => {
     setPageState(newState);
+    setMainMenu(true);
   };
 
   const pageView = () => {
     if (pageState === "Home") return <Home />;
-    if (pageState === "Projects") return <Projects />;
+    if (pageState === "Projects")
+      return <Projects mainMenu={mainMenu} setMainMenu={setMainMenu} />;
   };
 
   return (

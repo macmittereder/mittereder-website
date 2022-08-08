@@ -1,4 +1,4 @@
-import "./Projects.css"
+import "./Projects.css";
 import gz from "../images/gz/gzicon.png";
 import fr from "../images/fr/fricon.png";
 import lc from "../images/lc/lcicon.png";
@@ -23,98 +23,86 @@ import VehicleApp from "./Projects/VehicleApp";
 import RPS from "./Projects/RPS";
 import PinballPrice from "./Projects/PinballPrice";
 
-const Projects = () => {
-  const [mainMenu, setMainMenu] = useState(true);
+const Projects = (props) => {
   const [currentProject, setCurrentProject] = useState(null);
 
   const projects = [
     {
       title: "Gradez",
       image: gz,
-      page: <Gradez />
-    }, 
+      page: <Gradez />,
+    },
     {
       title: "Franklin Regional",
       image: fr,
-      page: <FranklinRegional />
+      page: <FranklinRegional />,
     },
     {
       title: "Life Counter",
       image: lc,
-      page: <LifeCounter />
+      page: <LifeCounter />,
     },
     {
       title: "Frame It",
       image: fi,
-      page: <FrameIt />
-    }, 
+      page: <FrameIt />,
+    },
     {
       title: "Fast Movie Photos",
       image: fmp,
-      page: <FMP />
+      page: <FMP />,
     },
     {
       title: "Graph Game",
       image: d,
-      page: <GraphGame />
+      page: <GraphGame />,
     },
     {
       title: "Words and Music",
       image: wam,
-      page: <WAM />
+      page: <WAM />,
     },
     {
       title: "Vehicle App",
       image: d,
-      page: <VehicleApp />
+      page: <VehicleApp />,
     },
     {
       title: "Rock Paper Scissors",
       image: rps,
-      page: <RPS />
+      page: <RPS />,
     },
     {
       title: "Pinball Price",
       image: pp,
-      page: <PinballPrice />
-    }
+      page: <PinballPrice />,
+    },
   ];
-  
-  const currentProjectHandler = (project) => {
-    setMainMenu(false);
-    setCurrentProject(project);
-  }
 
-  const goBack = () => {
-    setMainMenu(true);
-    setCurrentProject(null);
-  }
+  const currentProjectHandler = (project) => {
+    props.setMainMenu(false);
+    setCurrentProject(project);
+  };
 
   const showProject = () => {
-    return (
-      <div> 
-        <div onClick={goBack}>
-          <p>Back</p>
-        </div>
-        { currentProject.page }
-      </div>
-    )
-  }
+    return <div>{currentProject.page}</div>;
+  };
 
   return (
     <div className="projects">
-      {mainMenu && projects.map((project) => {
-        return (
-          <Card
-            title={project.title}
-            image={project.image}
-            onClick={() => currentProjectHandler(project)}
-          />
-        );
-      })}
-      {!mainMenu && showProject()}
+      {props.mainMenu &&
+        projects.map((project) => {
+          return (
+            <Card
+              title={project.title}
+              image={project.image}
+              onClick={() => currentProjectHandler(project)}
+            />
+          );
+        })}
+      {!props.mainMenu && showProject()}
     </div>
   );
-}
+};
 
 export default Projects;
