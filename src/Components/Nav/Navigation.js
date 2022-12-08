@@ -1,19 +1,31 @@
+import { Link } from "react-router-dom";
 import "./Navigation.css";
 
-const Navigation = (props) => {
-  const pageStateHandler = (pageState) => {
-    props.pageStateHandler(pageState);
-  }
-
+const Navigation = () => {
   return (
     <div className="navbar">
       <div className="navbarTop">
-        <button onClick={() => pageStateHandler("Home")}>Home</button>
-        <button onClick={() => pageStateHandler("Projects")}>Projects</button>
+        <Link to="/">Home</Link>
+        <Link to="projects">Projects</Link>
       </div>
       <div className="navbarBottom">
-        <button onClick={() => window.open("https://github.com/macmittereder", '_blank')}>Github</button>
-        <button onClick={() => window.open("https://www.linkedin.com/in/mackenzie-mittereder/", "_blank")}>LinkedIn</button>
+        <button
+          onClick={() =>
+            window.open("https://github.com/macmittereder", "_blank")
+          }
+        >
+          Github
+        </button>
+        <button
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/mackenzie-mittereder/",
+              "_blank"
+            )
+          }
+        >
+          LinkedIn
+        </button>
       </div>
     </div>
   );
