@@ -1,10 +1,7 @@
-import "./Header.css"
-import headerForeground from "../../images/header-foreground.png"
+import headerForeground from "../../images/header-foreground.png";
 
 const Header = () => {
-  return (
-    <img className="header" src={headerForeground} />
-  );
+  return <img className="flex-1 w-full" src={headerForeground} />;
 };
 
 export default Header;
