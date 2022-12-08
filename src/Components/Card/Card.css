@@ -1,0 +1,16 @@
+.card { 
+  height: 250px;
+  width: 250px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 0 4px 20px 3px rgb(0 0 0 / 20%);
+  margin: 15px;
+}
+
+.card p {
+  background-color: rgba(171, 183, 183, 0.8);
+  margin-top: 210px;
+  padding: 10px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
