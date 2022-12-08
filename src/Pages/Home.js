@@ -1,5 +1,5 @@
 import "./Home.css";
-import Tile, { Section } from "./Tile/Tile";
+import Tile, { Section } from "../Components/Tile/Tile";
 
 const Home = () => {
   const workExperience = [
@@ -27,8 +27,9 @@ const Home = () => {
     },
     {
       title: "Moe's Southwest Grill | Shift Manager | 11/2013 - 9/2017",
-      content: "Added to my leadership experience in a team based enviroment and training coworkers. Increased my social skills and patience with customers and coworkers."
-    }
+      content:
+        "Added to my leadership experience in a team based enviroment and training coworkers. Increased my social skills and patience with customers and coworkers.",
+    },
   ];
 
   const educations = [
@@ -38,20 +39,20 @@ const Home = () => {
     },
     {
       title: "Franklin Regional | Murrysville, PA | 2001 - 2014",
-      content: ""
-    }
+      content: "",
+    },
   ];
 
   return (
     <div className="home">
       <Tile title="Work Experience">
         {workExperience.map((experience, idx) => {
-            return  (
-              <div>
-                <Section title={experience.title} content={experience.content} />
-                {idx != workExperience.length - 1 ? <hr /> : ""}
-              </div>
-            )
+          return (
+            <div>
+              <Section title={experience.title} content={experience.content} />
+              {idx != workExperience.length - 1 ? <hr /> : ""}
+            </div>
+          );
         })}
       </Tile>
       <Tile title="Education">
@@ -61,11 +62,11 @@ const Home = () => {
               <Section title={education.title} content={education.content} />
               {idx != educations.length - 1 ? <hr /> : ""}
             </div>
-          )
+          );
         })}
       </Tile>
     </div>
   );
-}
+};
 
 export default Home;
