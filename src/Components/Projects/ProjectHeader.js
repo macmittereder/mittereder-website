@@ -1,19 +1,17 @@
-import "./ProjectHeader.css";
-
 const ProjectHeader = (props) => {
   return (
-    <div className="header">
-      <div className="title">
+    <div className="flex flex-col w-full">
+      <div className="text-4xl text-center font-bold">
         <p>{props.title}</p>
       </div>
-      <div className="details">
-        <img src={props.icon} className="icon" alt="icon" />
-        <div className="summary">
+      <div className="flex flex-row w-full">
+        <img src={props.icon} className="flex max-w-xs float-left" alt="icon" />
+        <div className="flex flex-1 p-2">
           <p>{props.summary}</p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectHeader;

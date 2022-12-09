@@ -1,5 +1,4 @@
-import "./Home.css";
-import Tile, { Section } from "../Components/Tile/Tile";
+import { Tile, Section } from "../Components/Tile/Tile";
 
 const Home = () => {
   const workExperience = [
@@ -44,7 +43,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="home">
+    <div className="flex bg-white p-2 flex-1 flex-col lg:flex-row">
       <Tile title="Work Experience">
         {workExperience.map((experience, idx) => {
           return (

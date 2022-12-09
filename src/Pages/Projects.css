@@ -1,9 +1,0 @@
-.projects { 
-  display: flex;
-  background-color: white;
-  align-items: flex-start;
-  flex: 1;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
-}

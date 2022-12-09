@@ -1,4 +1,3 @@
-import "./Projects.css";
 import gz from "../images/gz/gzicon.png";
 import fr from "../images/fr/fricon.png";
 import lc from "../images/lc/lcicon.png";
@@ -73,7 +72,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="projects">
+    <div className="grid grid-cols-2 lg:grid-cols-4 bg-white items-start flex-1 justify-center p-2">
       {projects.map((project) => (
         <Card
           title={project.title}

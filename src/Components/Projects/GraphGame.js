@@ -1,5 +1,4 @@
 import ProjectHeader from "./ProjectHeader";
-import "./Projects.css";
 import icon from "../../images/d/dicon.png";
 import img1 from "../../images/gg/gg1.png";
 import img2 from "../../images/gg/gg2.png";
@@ -11,7 +10,7 @@ import ProjectRow from "./ProjectRow";
 
 const GraphGame = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Graph Game"
         icon={icon}

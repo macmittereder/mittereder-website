@@ -1,10 +1,7 @@
-import "./Background.css";
 import headerBackground from "../../images/codeBackground.png";
 
 const Background = () => {
-  return (
-    <img className="background" src={headerBackground} />
-  )
-}
+  return <img className="fixed w-full h-full -z-10" src={headerBackground} />;
+};
 
 export default Background;

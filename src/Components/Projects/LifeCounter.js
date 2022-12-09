@@ -1,4 +1,3 @@
-import "./Projects.css";
 import icon from "../../images/lc/lcicon.png";
 import img1 from "../../images/lc/lc1.png";
 import img2 from "../../images/lc/lc2.png";
@@ -13,7 +12,7 @@ import ProjectRow from "./ProjectRow";
 
 const LifeCounter = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Life Counter"
         icon={icon}
