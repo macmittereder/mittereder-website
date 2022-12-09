@@ -1,10 +1,9 @@
-import "./Projects.css";
 import icon from "../../images/d/dicon.png";
 import ProjectHeader from "./ProjectHeader";
 
 const VehicleApp = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Vehicle App"
         icon={icon}

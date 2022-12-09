@@ -1,10 +1,9 @@
-import "./Projects.css";
 import icon from "../../images/fmp/fmpicon.png";
 import ProjectHeader from "./ProjectHeader";
 
 const FMP = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Fast Movie Photos"
         icon={icon}

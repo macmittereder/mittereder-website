@@ -1,33 +1,11 @@
 import ProjectHeader from "./ProjectHeader";
-import "./Projects.css";
 import icon from "../../images/gz/gzicon.png";
 import databaseIcon1 from "../../images/gz/database-security.png";
 import databaseIcon2 from "../../images/gz/database-structure.png";
 
 const Gradez = () => {
-  const styles = {
-    appContent: {
-      display: "flex",
-      width: "100%",
-      justifyContent: "center",
-    },
-    appContentColumn: {
-      display: "flex",
-      flexDirection: "column",
-      flex: 1,
-    },
-    title: {
-      textAlign: "center",
-    },
-    imgContainer: {
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column",
-    },
-  };
-
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Gradez"
         icon={icon}
@@ -36,9 +14,9 @@ const Gradez = () => {
         that are accumulative or weighted. Firebase is used to manage users and for a database. 
         Below is a representation of my capstone project poster.`}
       />
-      <div style={styles.appContent}>
-        <div style={styles.appContentColumn}>
-          <h2 style={styles.title}>Abstract</h2>
+      <div className="flex w-full content-center">
+        <div className="flex flex-col flex-1">
+          <h2 className="text-center">Abstract</h2>
           <p>
             Students often have trouble keeping track of grades and some
             teachers don’t use the tools provided to post grades online for the
@@ -53,7 +31,7 @@ const Gradez = () => {
             application is available for free on the Google Play store and gives
             students an easy solution to keep track of their grades.
           </p>
-          <h2 style={styles.title}>Background</h2>
+          <h2 className="text-center">Background</h2>
           <ul>
             <li>
               Previous experience: Never used a database with an Android
@@ -79,11 +57,12 @@ const Gradez = () => {
             </li>
           </ul>
         </div>
-        <div style={styles.appContentColumn}>
-          <h2 style={styles.title}>Security</h2>
-          <div style={styles.imgContainer}>
+        <div className="flex flex-col flex-1">
+          <h2 className="text-center">Security</h2>
+          <div className="flex items-center flex-col">
             <img
               src={databaseIcon1}
+              alt="Database Icon"
               style={{
                 maxWidth: "350px",
                 height: "175px",
@@ -91,6 +70,7 @@ const Gradez = () => {
             />
             <img
               src={databaseIcon2}
+              alt="Database Icon"
               style={{ width: "200px", height: "350px" }}
             />
           </div>
@@ -103,8 +83,8 @@ const Gradez = () => {
             information the user is trying to read from or write to.
           </p>
         </div>
-        <div style={styles.appContentColumn}>
-          <h2 style={styles.title}>Database Structure</h2>
+        <div className="flex flex-col flex-1">
+          <h2 className="text-center">Database Structure</h2>
           <p>
             This structure type is known as a NoSQL database. The different
             fields have no relation to each other, other than the fields having
@@ -117,7 +97,7 @@ const Gradez = () => {
             society when users could lose, damage, or replace their device. When
             any of these circumstances occur the user will retain their data.
           </p>
-          <h2 style={styles.title}>Conclusion</h2>
+          <h2 className="text-center">Conclusion</h2>
           <p>
             The process of learning, planning, and development of this Android
             project has made it work in its entirety. Firebase will keep

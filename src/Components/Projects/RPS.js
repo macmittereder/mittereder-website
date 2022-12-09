@@ -1,4 +1,3 @@
-import "./Projects.css";
 import icon from "../../images/rps/rpsicon.png";
 import img1 from "../../images/rps/rps1.png";
 import img2 from "../../images/rps/rps2.png";
@@ -11,7 +10,7 @@ import ProjectRow from "./ProjectRow";
 
 const RPS = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Rock, Paper, Scissors"
         icon={icon}

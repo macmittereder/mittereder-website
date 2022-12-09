@@ -1,4 +1,3 @@
-import "./Projects.css";
 import icon from "../../images/pp/ppicon.png";
 import img1 from "../../images/pp/pp1.png";
 import img2 from "../../images/pp/pp2.png";
@@ -8,7 +7,7 @@ import ProjectRow from "./ProjectRow";
 
 const PinballPrice = () => {
   return (
-    <div className="content">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
         title="Pinball Price"
         icon={icon}

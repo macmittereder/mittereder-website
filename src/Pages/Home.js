@@ -1,4 +1,4 @@
-import Tile, { Section } from "../Components/Tile/Tile";
+import { Tile, Section } from "../Components/Tile/Tile";
 
 const Home = () => {
   const workExperience = [

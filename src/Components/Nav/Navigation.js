@@ -4,8 +4,12 @@ const Navigation = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-evenly bg-white flex-1 w-full">
       <div className="flex flex-1 justify-evenly">
-        <Link to="/">Home</Link>
-        <Link to="projects">Projects</Link>
+        <Link className="text-xl hover:underline" to="/">
+          Home
+        </Link>
+        <Link className="text-xl hover:underline" to="projects">
+          Projects
+        </Link>
       </div>
       <div className="flex flex-1 justify-evenly">
         <button
