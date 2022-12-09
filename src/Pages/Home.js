@@ -1,44 +1,60 @@
-import { Tile, Section } from "../Components/Tile/Tile";
+import Tile from "../Components/Tile/Tile";
+import WorkSection from "../Components/Tile/WorkSection";
+import Section from "../Components/Tile/Section";
 
 const Home = () => {
   const workExperience = [
     {
-      title: "Dollar Bank | Sr. Software Developer | 8/2021 - Current",
-      content:
-        "Developing software in the Distributed Development & Integration Department.",
+      company: "Dollar Bank",
+      location: "Pittsburgh, PA",
+      position: "Senior Application Developer",
+      time: "August 2021 - Present",
+      content: [
+        "Developed .NET applications from console applications to web services.",
+        "Rewrote legacy ASP.NET web pages to .NET MVC.",
+        "Built SSIS packages for data migration and data syncing between companies and the mainframe.",
+      ],
     },
     {
-      title: "aSa | Software Developer II | 5/2018 - 8/2021",
-      content: "Worked on the rebar processing module of aSa.Studio software.",
+      company: "aSa",
+      location: "Murrysville, PA",
+      position: "Software Developer II",
+      time: "May 2018 - August 2021",
+      content: [
+        "Worked in two teams, Processing and Inventory Tracking, implementing new features using AngularJS and Entity Framework.",
+        "Fixed customer issues all around the world including production database updates. ",
+        "Used SSRS to create reports for customers to be used everyday in their company. ",
+      ],
     },
     {
-      title: "ATS Evolution | Software Engineer Intern | 2/2017 - 12/2017",
-      content: "Unified products into a studio environment for customers.",
+      company: "ATS Evolution",
+      location: "Greensburg, PA",
+      position: "Software Engineer Intern",
+      time: "February 2017 - January 2018",
+      content: [
+        "Developed disaster training software used by the Department of Defense using Pug, Node.js and Postgres.",
+        "Assisted in performing quality assurance and software testing via various tests tools and performance metrics to ensure a responsive end-user experience.",
+      ],
     },
     {
-      title: "TekSystems | Deployment Technician | 7/2015 - 9/2017",
-      content:
-        "Moving computers from the PNC complex in Pittsburgh to their new PNC tower.",
-    },
-    {
-      title: "Blast Off Apps | Contractor | 4/2015 - 7/2016",
-      content: "Developed mobile apps for various clients on Android and iOS.",
-    },
-    {
-      title: "Moe's Southwest Grill | Shift Manager | 11/2013 - 9/2017",
-      content:
-        "Added to my leadership experience in a team based enviroment and training coworkers. Increased my social skills and patience with customers and coworkers.",
+      company: "Blast Off Apps",
+      location: "Remote",
+      position: "Contractor",
+      time: "April 2015 - July 2016",
+      content: [
+        "Developed mobile apps for various clients for Android and iOS including FastMovie Photos, Words and Music, Vehicle List and Pinball Price.",
+        "Analyzed the market needs and designed the applications based on client's needs.",
+        "Investigated the applications performance using virtual Android and iOS Emulators.",
+      ],
     },
   ];
 
   const educations = [
     {
       title: "Saint Vincent College | Latrobe, PA | 2014 - 2018",
-      content: "Major: Computing and Information Science",
-    },
-    {
-      title: "Franklin Regional | Murrysville, PA | 2001 - 2014",
-      content: "",
+      content: [
+        "Courses taken include Server Side Programming, Database Concepts and Information Structures, Software Engineering, Discrete Mathematics, Computer Architecture and Operating Systems and Website Design.",
+      ],
     },
   ];
 
@@ -48,8 +64,12 @@ const Home = () => {
         {workExperience.map((experience, idx) => {
           return (
             <div>
-              <Section title={experience.title} content={experience.content} />
-              {idx != workExperience.length - 1 ? <hr /> : ""}
+              <WorkSection experience={experience} />
+              {idx != workExperience.length - 1 ? (
+                <hr className="h-1 bg-black my-2" />
+              ) : (
+                ""
+              )}
             </div>
           );
         })}
@@ -59,7 +79,7 @@ const Home = () => {
           return (
             <div>
               <Section title={education.title} content={education.content} />
-              {idx != educations.length - 1 ? <hr /> : ""}
+              {idx != educations.length - 1 ? <hr className="h-1" /> : ""}
             </div>
           );
         })}

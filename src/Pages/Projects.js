@@ -72,7 +72,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 bg-white items-start flex-1 justify-center p-2">
+    <div className="grid grid-cols-2 lg:grid-cols-4 p-2 bg-white">
       {projects.map((project) => (
         <Card
           title={project.title}
