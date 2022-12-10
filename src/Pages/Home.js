@@ -1,10 +1,15 @@
 import Tile from "../Components/Tile/Tile";
 import Section from "../Components/Tile/Section";
+import DollarBankLogo from "../images/dollar-bank-logo.png";
+import aSaLogo from "../images/aSa-logo.png";
+import ATSLogo from "../images/ats-logo.jpg";
+import BlastOffAppsLogo from "../images/blast-off-apps-logo.png";
 
 const Home = () => {
   const workExperience = [
     {
       company: "Dollar Bank",
+      logo: DollarBankLogo,
       location: "Pittsburgh, PA",
       position: "Senior Application Developer",
       time: "August 2021 - Present",
@@ -16,6 +21,7 @@ const Home = () => {
     },
     {
       company: "aSa",
+      logo: aSaLogo,
       location: "Murrysville, PA",
       position: "Software Developer II",
       time: "May 2018 - August 2021",
@@ -27,6 +33,7 @@ const Home = () => {
     },
     {
       company: "ATS Evolution",
+      logo: ATSLogo,
       location: "Greensburg, PA",
       position: "Software Engineer Intern",
       time: "February 2017 - January 2018",
@@ -37,6 +44,7 @@ const Home = () => {
     },
     {
       company: "Blast Off Apps",
+      logo: BlastOffAppsLogo,
       location: "Remote",
       position: "Contractor",
       time: "April 2015 - July 2016",

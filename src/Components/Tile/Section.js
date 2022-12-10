@@ -3,6 +3,17 @@ const WorkSection = (props) => {
 
   return (
     <div>
+      <div className="flex items-center justify-center">
+        {experience.logo ? (
+          <img
+            src={experience.logo}
+            alt="Company Logo"
+            className="w-full lg:w-auto lg:h-64 text-center"
+          />
+        ) : (
+          ""
+        )}
+      </div>
       <div className="flex flex-row">
         <p className="text-xl font-bold text-left">
           {experience.company ?? experience.school}
