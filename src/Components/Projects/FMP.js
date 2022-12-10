@@ -1,4 +1,5 @@
 import icon from "../../images/fmp/fmpicon.png";
+import ProjectFooter from "./ProjectFooter";
 import ProjectHeader from "./ProjectHeader";
 
 const FMP = () => {
@@ -13,6 +14,7 @@ const FMP = () => {
         and adjust the playback speed as the video is playing. The videos were accessed using a link directly  
         to them with the media api provided by Apple.`}
       />
+      <ProjectFooter />
     </div>
   );
 };

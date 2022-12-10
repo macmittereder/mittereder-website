@@ -7,6 +7,7 @@ import img4 from "../../images/gg/gg4.png";
 import img5 from "../../images/gg/gg5.png";
 import img6 from "../../images/gg/gg6.png";
 import ProjectRow from "./ProjectRow";
+import ProjectFooter from "./ProjectFooter";
 
 const GraphGame = () => {
   return (
@@ -52,6 +53,7 @@ const GraphGame = () => {
           text: `When the game is won by either user this display will appear to restart the game or choose a different map.`,
         }}
       />
+      <ProjectFooter />
     </div>
   );
 };

@@ -7,6 +7,7 @@ import img5 from "../../images/rps/rps5.png";
 import img6 from "../../images/rps/rps6.png";
 import ProjectHeader from "./ProjectHeader";
 import ProjectRow from "./ProjectRow";
+import ProjectFooter from "./ProjectFooter";
 
 const RPS = () => {
   return (
@@ -50,6 +51,7 @@ const RPS = () => {
           text: `This view is the preferences menu where you can change the font in game. You have the option to keep track of your stats and you can also clear stats data.`,
         }}
       />
+      <ProjectFooter />
     </div>
   );
 };

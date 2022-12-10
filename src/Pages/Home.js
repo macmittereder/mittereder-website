@@ -1,5 +1,4 @@
 import Tile from "../Components/Tile/Tile";
-import WorkSection from "../Components/Tile/WorkSection";
 import Section from "../Components/Tile/Section";
 
 const Home = () => {
@@ -51,7 +50,10 @@ const Home = () => {
 
   const educations = [
     {
-      title: "Saint Vincent College | Latrobe, PA | 2014 - 2018",
+      school: "Saint Vincent College",
+      location: "Latrobe, PA",
+      position: "Computing and Information Science",
+      time: "2014 - 2018",
       content: [
         "Courses taken include Server Side Programming, Database Concepts and Information Structures, Software Engineering, Discrete Mathematics, Computer Architecture and Operating Systems and Website Design.",
       ],
@@ -59,27 +61,21 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex bg-white p-2 flex-1 flex-col lg:flex-row">
-      <Tile title="Work Experience">
-        {workExperience.map((experience, idx) => {
+    <div className="flex bg-white p-2 flex-1 flex-col">
+      <Tile title="Work Experience" type="wrk">
+        {workExperience.map((experience) => {
           return (
-            <div>
-              <WorkSection experience={experience} />
-              {idx != workExperience.length - 1 ? (
-                <hr className="h-1 bg-black my-2" />
-              ) : (
-                ""
-              )}
+            <div className="m-2 p-4 border-b border-black">
+              <Section experience={experience} />
             </div>
           );
         })}
       </Tile>
-      <Tile title="Education">
-        {educations.map((education, idx) => {
+      <Tile title="Education" type="edu">
+        {educations.map((education) => {
           return (
             <div>
-              <Section title={education.title} content={education.content} />
-              {idx != educations.length - 1 ? <hr className="h-1" /> : ""}
+              <Section title={education.title} experience={education} />
             </div>
           );
         })}

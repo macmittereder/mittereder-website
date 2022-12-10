@@ -4,6 +4,8 @@ import img2 from "../../images/pp/pp2.png";
 import img3 from "../../images/pp/pp3.png";
 import ProjectHeader from "./ProjectHeader";
 import ProjectRow from "./ProjectRow";
+import { NavLink } from "react-router-dom";
+import ProjectFooter from "./ProjectFooter";
 
 const PinballPrice = () => {
   return (
@@ -39,6 +41,7 @@ const PinballPrice = () => {
           text: ``,
         }}
       />
+      <ProjectFooter />
     </div>
   );
 };

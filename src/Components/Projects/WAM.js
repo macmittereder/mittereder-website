@@ -1,4 +1,5 @@
 import icon from "../../images/wam/wamicon.png";
+import ProjectFooter from "./ProjectFooter";
 import ProjectHeader from "./ProjectHeader";
 
 const WAM = () => {
@@ -13,6 +14,7 @@ const WAM = () => {
         database where I stored their book collection. A Paypal api was also implemented so people have 
         more options to pay when buying a book from here.`}
       />
+      <ProjectFooter />
     </div>
   );
 };

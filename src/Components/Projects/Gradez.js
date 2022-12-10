@@ -2,6 +2,7 @@ import ProjectHeader from "./ProjectHeader";
 import icon from "../../images/gz/gzicon.png";
 import databaseIcon1 from "../../images/gz/database-security.png";
 import databaseIcon2 from "../../images/gz/database-structure.png";
+import ProjectFooter from "./ProjectFooter";
 
 const Gradez = () => {
   return (
@@ -107,6 +108,7 @@ const Gradez = () => {
           </p>
         </div>
       </div>
+      <ProjectFooter />
     </div>
   );
 };

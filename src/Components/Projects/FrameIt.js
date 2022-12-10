@@ -1,4 +1,5 @@
 import icon from "../../images/fi/fiicon.png";
+import ProjectFooter from "./ProjectFooter";
 import ProjectHeader from "./ProjectHeader";
 
 const FrameIt = () => {
@@ -14,6 +15,7 @@ const FrameIt = () => {
         After the release of FrameIt the app was placed on the top paid photography app list and made it 
         on the list of overall top paid apps.`}
       />
+      <ProjectFooter />
     </div>
   );
 };

@@ -4,8 +4,12 @@ const ProjectHeader = (props) => {
       <div className="text-4xl text-center font-bold">
         <p>{props.title}</p>
       </div>
-      <div className="flex flex-row w-full">
-        <img src={props.icon} className="flex max-w-xs float-left" alt="icon" />
+      <div className="flex flex-col md:flex-row w-full items-center">
+        <img
+          src={props.icon}
+          className="flex md:float-left h-56 md:h-80"
+          alt="icon"
+        />
         <div className="flex flex-1 p-2">
           <p>{props.summary}</p>
         </div>

@@ -1,4 +1,5 @@
 import icon from "../../images/d/dicon.png";
+import ProjectFooter from "./ProjectFooter";
 import ProjectHeader from "./ProjectHeader";
 
 const VehicleApp = () => {
@@ -12,6 +13,7 @@ const VehicleApp = () => {
         store information about vehicles to a single database so it was accessible to anyone that 
         is using the app. This was achieved using the Parse api to retrieve data from the Parse database.`}
       />
+      <ProjectFooter />
     </div>
   );
 };

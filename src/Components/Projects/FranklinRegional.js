@@ -7,6 +7,7 @@ import img4 from "../../images/fr/fr4.png";
 import img5 from "../../images/fr/fr5.png";
 import img6 from "../../images/fr/fr6.png";
 import ProjectRow from "./ProjectRow";
+import ProjectFooter from "./ProjectFooter";
 
 const FranklinRegional = () => {
   return (
@@ -51,6 +52,7 @@ const FranklinRegional = () => {
           text: `This is the settings page where the user has the option to view the webpage as a desktop or as a mobile view.`,
         }}
       />
+      <ProjectFooter />
     </div>
   );
 };

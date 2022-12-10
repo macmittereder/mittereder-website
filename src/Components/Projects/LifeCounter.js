@@ -9,6 +9,7 @@ import img7 from "../../images/lc/lc7.png";
 import img8 from "../../images/lc/lc8.png";
 import ProjectHeader from "./ProjectHeader";
 import ProjectRow from "./ProjectRow";
+import ProjectFooter from "./ProjectFooter";
 
 const LifeCounter = () => {
   return (
@@ -69,6 +70,7 @@ const LifeCounter = () => {
           text: `When 'Review Game' is pressed this screen will appear showing the players how many lives have been gained or lost throughout the game.`,
         }}
       />
+      <ProjectFooter />
     </div>
   );
 };
