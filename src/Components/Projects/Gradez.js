@@ -15,9 +15,9 @@ const Gradez = () => {
         that are accumulative or weighted. Firebase is used to manage users and for a database. 
         Below is a representation of my capstone project poster.`}
       />
-      <div className="flex w-full content-center">
+      <div className="flex w-full content-center flex-col lg:flex-row">
         <div className="flex flex-col flex-1">
-          <h2 className="text-center">Abstract</h2>
+          <h2 className="text-center font-bold text-2xl">Abstract</h2>
           <p>
             Students often have trouble keeping track of grades and some
             teachers don’t use the tools provided to post grades online for the
@@ -32,7 +32,7 @@ const Gradez = () => {
             application is available for free on the Google Play store and gives
             students an easy solution to keep track of their grades.
           </p>
-          <h2 className="text-center">Background</h2>
+          <h2 className="text-center font-bold text-2xl">Background</h2>
           <ul>
             <li>
               Previous experience: Never used a database with an Android
@@ -59,7 +59,7 @@ const Gradez = () => {
           </ul>
         </div>
         <div className="flex flex-col flex-1">
-          <h2 className="text-center">Security</h2>
+          <h2 className="text-center font-bold text-2xl">Security</h2>
           <div className="flex items-center flex-col">
             <img
               src={databaseIcon1}
@@ -85,7 +85,7 @@ const Gradez = () => {
           </p>
         </div>
         <div className="flex flex-col flex-1">
-          <h2 className="text-center">Database Structure</h2>
+          <h2 className="text-center font-bold text-2xl">Database Structure</h2>
           <p>
             This structure type is known as a NoSQL database. The different
             fields have no relation to each other, other than the fields having
@@ -98,7 +98,7 @@ const Gradez = () => {
             society when users could lose, damage, or replace their device. When
             any of these circumstances occur the user will retain their data.
           </p>
-          <h2 className="text-center">Conclusion</h2>
+          <h2 className="text-center font-bold text-2xl">Conclusion</h2>
           <p>
             The process of learning, planning, and development of this Android
             project has made it work in its entirety. Firebase will keep
