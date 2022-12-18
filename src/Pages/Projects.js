@@ -14,6 +14,11 @@ import { useNavigate } from "react-router-dom";
 const Projects = () => {
   const projects = [
     {
+      title: "Mittereder.com",
+      image: d,
+      page: "mw",
+    },
+    {
       title: "Gradez",
       image: gz,
       page: "gz",
