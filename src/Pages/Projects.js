@@ -7,6 +7,7 @@ import d from "../images/d/dicon.png";
 import wam from "../images/wam/wamicon.png";
 import rps from "../images/rps/rpsicon.png";
 import pp from "../images/pp/ppicon.png";
+import mw from "../images/mw/mwicon.png";
 
 import Card from "../Components/Card/Card";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +16,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Mittereder.com",
-      image: d,
+      image: mw,
       page: "mw",
     },
     {

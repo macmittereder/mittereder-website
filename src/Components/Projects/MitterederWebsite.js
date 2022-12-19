@@ -1,7 +1,9 @@
-import icon from "../../images/d/dicon.png";
+import { useEffect } from "react";
 import ProjectHeader from "./ProjectHeader";
 import ProjectFooter from "./ProjectFooter";
-import { useEffect } from "react";
+import icon from "../../images/mw/mwicon.png";
+import r1 from "../../images/mw/r1.png";
+import r2 from "../../images/mw/r2.png";
 
 const MitterederWebsite = () => {
   useEffect(() => {
@@ -18,78 +20,49 @@ const MitterederWebsite = () => {
   }, []);
 
   return (
-    <div className="flex bg-white items-start flex-1 justify-center flex-wrap flex-col p-2">
+    <div className="flex bg-white items-start flex-1 justify-center flex-wrap lg:flex-col p-2">
       <ProjectHeader
         title="Mittereder.com"
         icon={icon}
-        summary={`A portfolio website to show some projects that I have started and finished. Originally
-        written in Pug and Node.js using Sass and Bootstrap in 2016 and now rewritten in React with Tailwindcss.`}
+        summary={`A portfolio website to show some projects that I have started and finished.`}
       />
       <hr />
-      <div className="flex">
-        <div className="flex flex-1">
-          <pre className="prettyprint rounded-xl">{`
-html
-  head
-    title= title
-    block css
-      link(rel='stylesheet', type='text/css', href='/css/main.min.css')
-      link(rel='stylesheet', type='text/css', href='/css/main.min.css.map')
-        
-  body
-    //- Navigation Bar
-    a(href="/")
-      img(src="/images/icons/fixedlogo.png", class="logoimage")
-
-    ul.topnav
-      li
-        a(href="https://www.linkedin.com/in/mackenzie-mittereder/") LINKEDIN
-      li
-        a(href="https://github.com/macmittereder") GITHUB
-      li
-        a(href="/projects") PROJECTS
-      li
-        a(href="/") HOME
-
-    block content	
-      
-  footer
-    block footer
-      script(src="/js/bootstrap/bootstrap.min.js")
-      script(src="/js/material/material.min.js")
-      
-    hr
-    address= "Copyright 2022 All Rights Reserved www.mittereder.com"
-    `}</pre>
-          <pre className="prettyprint">{`
-.card {
-  @include card;
-}
-
-$list: gz, fr, lc, fi, fmp, gg, pp, rps, wam, d;
-@each $name in $list {
-  .#{$name}-card-image {
-    &.mdl-card {
-      width: 100%;
-      height: 256px;
-      background: url('/images/#{$name}/#{$name}icon.png') center / cover;
-    }
-    &>.mdl-card__actions {
-      height: 52px;
-      padding: 16px;
-      background: rgba(0, 0, 0, 0.2);
-    }
-    &__filename {
-      color: #fff;
-      font-size: 14px;
-      font-weight: 500;
-    }
-  }
-}
-    `}</pre>
+      <div className="flex flex-col lg:flex-row">
+        <div className="w-full lg:w-1/2">
+          <img src={r1} alt="Release 1.0 Screenshot" />
         </div>
-        <div className="flex flex-1">
-          <p>Description</p>
+        <div className="w-full lg:w-1/2 p-4">
+          <a
+            className="underline italic"
+            href="https://github.com/macmittereder/mittereder-website/tree/release-1.0"
+          >
+            release-1.0
+          </a>
+          <p>
+            First written in Pug and Nodes.js with Sass middleware. Originally
+            the CSS was being built on every page load with the middleware so
+            that was fixed by creating a static CSS file with Grunt. The website
+            was hosted via VPS on a couple different hosting platforms until I
+            used the GitHub action on Digital Ocean to automatically deploy my
+            website.
+          </p>
+        </div>
+      </div>
+      <div className="flex mt-2 flex-col-reverse lg:flex-row">
+        <div className="w-full lg:w-1/2 p-4">
+          <a
+            className="underline italic"
+            href="https://github.com/macmittereder/mittereder-website/tree/release-2.0"
+          >
+            release-2.0
+          </a>
+          <p>
+            Rewritten in React with Tailwindcss. The website is now hosted on
+            Github using their pages functionality to easily deploy any updates.
+          </p>
+        </div>
+        <div className="w-full lg:w-1/2">
+          <img src={r2} alt="Release 2.0 Screenshot" />
         </div>
       </div>
       <ProjectFooter />
