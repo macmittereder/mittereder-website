@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ProjectHeader from "./ProjectHeader";
 import ProjectFooter from "./ProjectFooter";
 import icon from "../../images/mw/mwicon.png";
@@ -6,19 +5,6 @@ import r1 from "../../images/mw/r1.png";
 import r2 from "../../images/mw/r2.png";
 
 const MitterederWebsite = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-
-    script.src =
-      "https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js";
-    script.async = true;
-
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <div className="flex bg-white items-start flex-1 justify-center flex-wrap lg:flex-col p-2">
       <ProjectHeader

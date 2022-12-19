@@ -3,7 +3,7 @@ import githubLogo from "../../images/github-logo.png";
 import linkedinLogo from "../../images/linkedin-logo.png";
 
 const linkClass =
-  "flex text-lg md:text-2xl lg:text-4xl font-bold hover:border-2 border-black rounded-md border w-2/5 h-16 items-center justify-center m-2";
+  "flex text-lg md:text-2xl lg:text-4xl font-bold w-2/5 h-16 items-center justify-center m-2";
 
 const Navigation = () => {
   return (
