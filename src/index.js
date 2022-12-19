@@ -15,6 +15,7 @@ import PinballPrice from "./Components/Projects/PinballPrice";
 import RPS from "./Components/Projects/RPS";
 import VehicleApp from "./Components/Projects/VehicleApp";
 import WAM from "./Components/Projects/WAM";
+import MitterederWebsite from "./Components/Projects/MitterederWebsite";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,6 +31,7 @@ root.render(
           <Route path="gz" element={<Gradez />} />
           <Route path="gg" element={<GraphGame />} />
           <Route path="lc" element={<LifeCounter />} />
+          <Route path="mw" element={<MitterederWebsite />} />
           <Route path="pp" element={<PinballPrice />} />
           <Route path="rps" element={<RPS />} />
           <Route path="va" element={<VehicleApp />} />

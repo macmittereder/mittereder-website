@@ -10,12 +10,20 @@ const ProjectRow = (props) => {
         <p className="flex flex-1 py-2">{props.section1.text}</p>
       </div>
       <div className="flex flex-1">
-        <p className="flex flex-1 py-2 md:items-end">{props.section2.text}</p>
-        <img
-          className="flex flex-1 w-24 p-2"
-          alt="Screenshot"
-          src={props.section2.image}
-        />
+        {props.section2.image ? (
+          <>
+            <p className="flex flex-1 py-2 md:items-end">
+              {props.section2.text}
+            </p>
+            <img
+              className="flex flex-1 w-24 p-2"
+              alt="Screenshot"
+              src={props.section2.image}
+            />
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

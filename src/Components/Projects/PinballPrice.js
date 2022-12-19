@@ -4,7 +4,6 @@ import img2 from "../../images/pp/pp2.png";
 import img3 from "../../images/pp/pp3.png";
 import ProjectHeader from "./ProjectHeader";
 import ProjectRow from "./ProjectRow";
-import { NavLink } from "react-router-dom";
 import ProjectFooter from "./ProjectFooter";
 
 const PinballPrice = () => {
@@ -21,26 +20,28 @@ const PinballPrice = () => {
         However, the subdomain for this project has been removed by the the owner of Pinballprice.com.`}
       />
       <hr />
-      <ProjectRow
-        section1={{
-          image: img1,
-          text: `The slide out side menu made navigating through the website easier for users.`,
-        }}
-        section2={{
-          image: img2,
-          text: `This is the slide out menu on the iPhone.`,
-        }}
-      />
-      <ProjectRow
-        section1={{
-          image: img3,
-          text: `This was the main webview display for the app. The Pinballprice website was modified for a mobile version and used inside a web browser.`,
-        }}
-        section2={{
-          image: null,
-          text: ``,
-        }}
-      />
+      <div className="w-full">
+        <ProjectRow
+          section1={{
+            image: img1,
+            text: `The slide out side menu made navigating through the website easier for users.`,
+          }}
+          section2={{
+            image: img2,
+            text: `This is the slide out menu on the iPhone.`,
+          }}
+        />
+        <ProjectRow
+          section1={{
+            image: img3,
+            text: `This was the main webview display for the app. The Pinballprice website was modified for a mobile version and used inside a web browser.`,
+          }}
+          section2={{
+            image: null,
+            text: ``,
+          }}
+        />
+      </div>
       <ProjectFooter />
     </div>
   );
