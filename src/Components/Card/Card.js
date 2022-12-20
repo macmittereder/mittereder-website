@@ -12,8 +12,8 @@ const Card = (props) => {
         }}
         onClick={props.onClick}
       >
-        <div className="mt-40 sm:mt-64 bg-gray-400 ">
-          <p className="items-end p-2">{props.title}</p>
+        <div className="mt-40 sm:mt-64 bg-gray-400 bg-opacity-80">
+          <p className="p-2">{props.title}</p>
         </div>
       </div>
     </div>
