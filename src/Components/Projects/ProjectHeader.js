@@ -1,9 +1,14 @@
 const ProjectHeader = (props) => {
   return (
     <div className="flex flex-col w-full">
-      <div className="text-4xl text-center font-bold">
-        <p>{props.title}</p>
-      </div>
+      <p className="text-4xl text-center font-bold">{props.title}</p>
+      {props.github ? (
+        <a className="text-xl underline text-center" href={props.github}>
+          See on Github
+        </a>
+      ) : (
+        ""
+      )}
       <div className="flex flex-col md:flex-row w-full items-center">
         <img
           src={props.icon}

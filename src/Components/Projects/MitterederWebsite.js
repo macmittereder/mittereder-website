@@ -11,6 +11,7 @@ const MitterederWebsite = () => {
         title="Mittereder.com"
         icon={icon}
         summary={`A portfolio website to show some projects that I have started and finished.`}
+        github="https://github.com/macmittereder/mittereder-website"
       />
       <hr />
       <div className="flex flex-col lg:flex-row">

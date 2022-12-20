@@ -1,6 +1,6 @@
 const ProjectRow = (props) => {
   return (
-    <div className="flex flex-col md:flex-row justify-evenly">
+    <div className="flex flex-col md:flex-row justify-evenly w-full">
       <div className="flex flex-1">
         <img
           className="flex flex-1 w-24 p-2"
@@ -22,7 +22,7 @@ const ProjectRow = (props) => {
             />
           </>
         ) : (
-          ""
+          <></>
         )}
       </div>
     </div>

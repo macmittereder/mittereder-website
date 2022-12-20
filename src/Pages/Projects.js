@@ -40,6 +40,11 @@ const Projects = () => {
       page: "fi",
     },
     {
+      title: "Cuz",
+      image: d,
+      page: "cz",
+    },
+    {
       title: "Fast Movie Photos",
       image: fmp,
       page: "fmp",
