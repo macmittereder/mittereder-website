@@ -16,6 +16,7 @@ import RPS from "./Components/Projects/RPS";
 import VehicleApp from "./Components/Projects/VehicleApp";
 import WAM from "./Components/Projects/WAM";
 import MitterederWebsite from "./Components/Projects/MitterederWebsite";
+import Cuz from "./Components/Projects/Cuz";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -25,7 +26,8 @@ root.render(
         <Route index element={<Home />} />
         <Route path="projects">
           <Route index element={<Projects />} />
-          <Route path="fmp" element={<FMP />} />
+          <Route path="cz" element={<Cuz />} />
+          <Route path="fmp" element={<FMP />} />1
           <Route path="fi" element={<FrameIt />} />
           <Route path="fr" element={<FranklinRegional />} />
           <Route path="gz" element={<Gradez />} />
