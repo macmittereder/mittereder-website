@@ -23,8 +23,10 @@ const WorkSection = (props) => {
       <p className="text-xl">{experience.position}</p>
       <p className="text-md font-bold">{experience.time}</p>
       <ul className="ml-8">
-        {experience.content.map((info) => (
-          <li className="list-disc">{info}</li>
+        {experience.content.map((info, idx) => (
+          <li className="list-disc" key={idx}>
+            {info}
+          </li>
         ))}
       </ul>
     </div>

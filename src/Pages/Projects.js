@@ -86,6 +86,7 @@ const Projects = () => {
     <div className="grid grid-cols-2 lg:grid-cols-4 p-2 bg-white">
       {projects.map((project) => (
         <Card
+          key={project.title}
           title={project.title}
           image={project.image}
           onClick={() => currentProjectHandler(project)}

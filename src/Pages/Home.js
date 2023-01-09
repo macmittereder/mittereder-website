@@ -56,37 +56,34 @@ const Home = () => {
     },
   ];
 
-  const educations = [
-    {
-      school: "Saint Vincent College",
-      location: "Latrobe, PA",
-      position: "Computing and Information Science",
-      time: "2014 - 2018",
-      content: [
-        "Courses taken include Server Side Programming, Database Concepts and Information Structures, Software Engineering, Discrete Mathematics, Computer Architecture and Operating Systems and Website Design.",
-      ],
-    },
-  ];
+  const education = {
+    school: "Saint Vincent College",
+    location: "Latrobe, PA",
+    position: "Computing and Information Science",
+    time: "2014 - 2018",
+    content: [
+      "Courses taken include Server Side Programming, Database Concepts and Information Structures, Software Engineering, Discrete Mathematics, Computer Architecture and Operating Systems and Website Design.",
+    ],
+  };
 
   return (
     <div className="flex bg-white p-2 flex-1 flex-col">
       <Tile title="Work Experience" type="wrk">
         {workExperience.map((experience) => {
           return (
-            <div className="m-2 p-4 border-b border-black">
+            <div
+              className="m-2 p-4 border-b border-black"
+              key={experience.company}
+            >
               <Section experience={experience} />
             </div>
           );
         })}
       </Tile>
       <Tile title="Education" type="edu">
-        {educations.map((education) => {
-          return (
-            <div>
-              <Section title={education.title} experience={education} />
-            </div>
-          );
-        })}
+        <div>
+          <Section title={education.title} experience={education} />
+        </div>
       </Tile>
     </div>
   );
