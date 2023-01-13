@@ -18,7 +18,7 @@ const MitterederWebsite = () => {
         <div className="w-full lg:w-1/2">
           <img src={r1} alt="Release 1.0 Screenshot" />
         </div>
-        <div className="w-full lg:w-1/2 p-4">
+        <div className="w-full lg:w-1/2 p-4 text-lg">
           <a
             className="underline italic"
             href="https://github.com/macmittereder/mittereder-website/tree/release-1.0"
@@ -36,7 +36,7 @@ const MitterederWebsite = () => {
         </div>
       </div>
       <div className="flex mt-2 flex-col-reverse lg:flex-row">
-        <div className="w-full lg:w-1/2 p-4">
+        <div className="w-full lg:w-1/2 p-4 text-lg">
           <a
             className="underline italic"
             href="https://github.com/macmittereder/mittereder-website/tree/release-2.0"

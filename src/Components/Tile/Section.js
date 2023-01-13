@@ -15,16 +15,16 @@ const WorkSection = (props) => {
         )}
       </div>
       <div className="flex flex-row">
-        <p className="text-xl font-bold text-left">
+        <p className="text-2xl font-bold text-left">
           {experience.company ?? experience.school}
         </p>
-        <p className="text-xl">&nbsp;- {experience.location}</p>
+        <p className="text-2xl">&nbsp;- {experience.location}</p>
       </div>
-      <p className="text-xl">{experience.position}</p>
-      <p className="text-md font-bold">{experience.time}</p>
+      <p className="text-2xl">{experience.position}</p>
+      <p className="text-lg font-bold">{experience.time}</p>
       <ul className="ml-8">
         {experience.content.map((info, idx) => (
-          <li className="list-disc" key={idx}>
+          <li className="list-disc text-md" key={idx}>
             {info}
           </li>
         ))}
