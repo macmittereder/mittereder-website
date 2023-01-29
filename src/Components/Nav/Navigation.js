@@ -30,33 +30,30 @@ const Navigation = () => {
             </NavLink>
           </div>
           <div className="flex flex-1 justify-evenly items-center">
-            <button
+            <a
               className={linkClass}
-              onClick={() =>
-                window.open("https://github.com/macmittereder", "_blank")
-              }
+              href="https://github.com/macmittereder"
+              rel="noreferrer"
+              target="_blank"
             >
               <img
                 src={githubLogo}
                 className="h-max-full h-auto w-auto p-2 xl:p-10 2xl:p-24"
                 alt="Github"
               />
-            </button>
-            <button
+            </a>
+            <a
               className={linkClass}
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/mackenzie-mittereder/",
-                  "_blank"
-                )
-              }
+              href="https://www.linkedin.com/in/mackenzie-mittereder/"
+              rel="noreferrer"
+              target="_blank"
             >
               <img
                 src={linkedinLogo}
                 className="h-max-full f-auto w-auto p-2 xl:p-10 2xl:p-24"
                 alt="LinkedIn"
               />
-            </button>
+            </a>
           </div>
         </div>
         <hr className="flex border border-black w-3/4" />
