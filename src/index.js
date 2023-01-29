@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import FMP from "./Components/Projects/FMP";
@@ -15,27 +15,31 @@ import PinballPrice from "./Components/Projects/PinballPrice";
 import RPS from "./Components/Projects/RPS";
 import VehicleApp from "./Components/Projects/VehicleApp";
 import WAM from "./Components/Projects/WAM";
+import MitterederWebsite from "./Components/Projects/MitterederWebsite";
+import Cuz from "./Components/Projects/Cuz";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: "/projects", element: <Projects /> },
+      { path: "/projects/cz", element: <Cuz /> },
+      { path: "/projects/fmp", element: <FMP /> },
+      { path: "/projects/fi", element: <FrameIt /> },
+      { path: "/projects/fr", element: <FranklinRegional /> },
+      { path: "/projects/gz", element: <Gradez /> },
+      { path: "/projects/gg", element: <GraphGame /> },
+      { path: "/projects/lc", element: <LifeCounter /> },
+      { path: "/projects/mw", element: <MitterederWebsite /> },
+      { path: "/projects/pp", element: <PinballPrice /> },
+      { path: "/projects/rps", element: <RPS /> },
+      { path: "/projects/va", element: <VehicleApp /> },
+      { path: "/projects/wam", element: <WAM /> },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<Home />} />
-        <Route path="projects">
-          <Route index element={<Projects />} />
-          <Route path="fmp" element={<FMP />} />
-          <Route path="fi" element={<FrameIt />} />
-          <Route path="fr" element={<FranklinRegional />} />
-          <Route path="gz" element={<Gradez />} />
-          <Route path="gg" element={<GraphGame />} />
-          <Route path="lc" element={<LifeCounter />} />
-          <Route path="pp" element={<PinballPrice />} />
-          <Route path="rps" element={<RPS />} />
-          <Route path="va" element={<VehicleApp />} />
-          <Route path="wam" element={<WAM />} />
-        </Route>
-      </Route>
-    </Routes>
-  </BrowserRouter>
-);
+root.render(<RouterProvider router={router} />);

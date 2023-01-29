@@ -7,12 +7,18 @@ import d from "../images/d/dicon.png";
 import wam from "../images/wam/wamicon.png";
 import rps from "../images/rps/rpsicon.png";
 import pp from "../images/pp/ppicon.png";
+import mw from "../images/mw/mwicon.png";
 
 import Card from "../Components/Card/Card";
 import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Mittereder.com",
+      image: mw,
+      page: "mw",
+    },
     {
       title: "Gradez",
       image: gz,
@@ -32,6 +38,11 @@ const Projects = () => {
       title: "Frame It",
       image: fi,
       page: "fi",
+    },
+    {
+      title: "Cuz",
+      image: d,
+      page: "cz",
     },
     {
       title: "Fast Movie Photos",
@@ -75,6 +86,7 @@ const Projects = () => {
     <div className="grid grid-cols-2 lg:grid-cols-4 p-2 bg-white">
       {projects.map((project) => (
         <Card
+          key={project.title}
           title={project.title}
           image={project.image}
           onClick={() => currentProjectHandler(project)}

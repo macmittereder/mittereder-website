@@ -18,7 +18,7 @@ const Gradez = () => {
       <div className="flex w-full content-center flex-col lg:flex-row">
         <div className="flex flex-col flex-1">
           <h2 className="text-center font-bold text-2xl">Abstract</h2>
-          <p>
+          <p className="text-lg">
             Students often have trouble keeping track of grades and some
             teachers don’t use the tools provided to post grades online for the
             students to view. Gradez is a mobile application developed for the
@@ -34,24 +34,24 @@ const Gradez = () => {
           </p>
           <h2 className="text-center font-bold text-2xl">Background</h2>
           <ul>
-            <li>
+            <li className="text-lg list-disc">
               Previous experience: Never used a database with an Android
               application.
             </li>
-            <li>
+            <li className="text-lg list-disc">
               Current experience: Developed multiple Android applications as a
               contractor.
             </li>
-            <li>
+            <li className="text-lg list-disc">
               Gained experience by creating Android applications in my free time
               over the years and through being a contractor.
             </li>
-            <li>
+            <li className="text-lg list-disc">
               Firebase, a cloud-based database, is used so users will never lose
               their information and can login from any Android device to view
               their grades.
             </li>
-            <li>
+            <li className="text-lg list-disc">
               This Android application specializes in calculating students
               grades for classes that are accumulative or weighted where other
               apps focus on only one type of grading scale.
@@ -75,7 +75,7 @@ const Gradez = () => {
               style={{ width: "200px", height: "350px" }}
             />
           </div>
-          <p>
+          <p className="text-lg">
             Firebase includes the ability to program a set rules list to dictate
             how users interact with the database. The rules above use the same
             logic for users reading information from the database and writing
@@ -86,7 +86,7 @@ const Gradez = () => {
         </div>
         <div className="flex flex-col flex-1">
           <h2 className="text-center font-bold text-2xl">Database Structure</h2>
-          <p>
+          <p className="text-lg">
             This structure type is known as a NoSQL database. The different
             fields have no relation to each other, other than the fields having
             a parent/child relationship. This kind of database utilizes real
@@ -99,7 +99,7 @@ const Gradez = () => {
             any of these circumstances occur the user will retain their data.
           </p>
           <h2 className="text-center font-bold text-2xl">Conclusion</h2>
-          <p>
+          <p className="text-lg">
             The process of learning, planning, and development of this Android
             project has made it work in its entirety. Firebase will keep
             supporting this application while being used without any changes to
