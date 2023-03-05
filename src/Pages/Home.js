@@ -10,8 +10,13 @@ const Home = () => {
   const currentJobTime = () => {
     var start = moment([2021, 8]);
     var end = moment([moment().year(), moment().month() + 2]);
-    return `(${moment.duration(end.diff(start)).years()} yrs 
-      ${moment.duration(end.diff(start)).months()} mos)`;
+
+    var months = moment.duration(end.diff(start)).months();
+    var years = moment.duration(end.diff(start)).years();
+
+    return `(${years > 0 ? years + (years > 1 ? " yrs" : " yr") : ""} ${
+      months > 0 ? months + (months > 1 ? " mos" : " mo") : ""
+    })`;
   };
 
   const workExperience = [
