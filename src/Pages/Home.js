@@ -4,15 +4,23 @@ import DollarBankLogo from "../images/dollar-bank-logo.png";
 import aSaLogo from "../images/aSa-logo.png";
 import ATSLogo from "../images/ats-logo.jpg";
 import BlastOffAppsLogo from "../images/blast-off-apps-logo.png";
+import moment from "moment";
 
 const Home = () => {
+  const currentJobTime = () => {
+    var start = moment([2021, 8]);
+    var end = moment([moment().year(), moment().month() + 2]);
+    return `(${moment.duration(end.diff(start)).years()} yrs 
+      ${moment.duration(end.diff(start)).months()} mos)`;
+  };
+
   const workExperience = [
     {
       company: "Dollar Bank",
       logo: DollarBankLogo,
       location: "Pittsburgh, PA",
       position: "Senior Application Developer",
-      time: "August 2021 - Present",
+      time: "August 2021 - Present " + currentJobTime(),
       content: [
         "Developed .NET applications from console applications to web services.",
         "Rewrote legacy ASP.NET web pages to .NET MVC.",
@@ -24,7 +32,7 @@ const Home = () => {
       logo: aSaLogo,
       location: "Murrysville, PA",
       position: "Software Developer II",
-      time: "May 2018 - August 2021",
+      time: "May 2018 - August 2021 (3 yrs 4 mos)",
       content: [
         "Worked in two teams, Processing and Inventory Tracking, implementing new features using AngularJS and Entity Framework.",
         "Fixed customer issues all around the world including production database updates. ",
@@ -36,7 +44,7 @@ const Home = () => {
       logo: ATSLogo,
       location: "Greensburg, PA",
       position: "Software Engineer Intern",
-      time: "February 2017 - January 2018",
+      time: "February 2017 - January 2018 (11 mos)",
       content: [
         "Developed disaster training software used by the Department of Defense using Pug, Node.js and Postgres.",
         "Assisted in performing quality assurance and software testing via various tests tools and performance metrics to ensure a responsive end-user experience.",
@@ -47,7 +55,7 @@ const Home = () => {
       logo: BlastOffAppsLogo,
       location: "Remote",
       position: "Contractor",
-      time: "April 2015 - July 2016",
+      time: "April 2015 - July 2016 (1 yr 4 mos)",
       content: [
         "Developed mobile apps for various clients for Android and iOS including FastMovie Photos, Words and Music, Vehicle List and Pinball Price.",
         "Analyzed the market needs and designed the applications based on client's needs.",
