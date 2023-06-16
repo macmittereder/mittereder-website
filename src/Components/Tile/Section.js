@@ -3,12 +3,12 @@ const WorkSection = (props) => {
 
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center w-auto h-64">
         {experience.logo ? (
           <img
             src={experience.logo}
             alt="Company Logo"
-            className="w-full lg:w-auto lg:h-64 text-center"
+            className="w-auto h-full text-center"
           />
         ) : (
           ""

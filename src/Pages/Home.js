@@ -1,9 +1,10 @@
 import Tile from "../Components/Tile/Tile";
 import Section from "../Components/Tile/Section";
+import LexiconLogo from "../images/lexicon-logo.png";
 import DollarBankLogo from "../images/dollar-bank-logo.png";
 import aSaLogo from "../images/aSa-logo.png";
-import ATSLogo from "../images/ats-logo.jpg";
-import BlastOffAppsLogo from "../images/blast-off-apps-logo.png";
+import ATSLogo from "../images/ats-logo.png";
+import SVCLogo from "../images/svc-logo.png";
 import moment from "moment";
 
 const Home = () => {
@@ -20,6 +21,17 @@ const Home = () => {
   };
 
   const workExperience = [
+    {
+      company: "Lexicon",
+      logo: LexiconLogo,
+      location: "remote",
+      position: "Full Stack Developer",
+      time: "August 2021 - Present " + currentJobTime(),
+      content: [
+        "Developing Angular frontend and .NET backend SaaS for law firms.",
+        "Maintaining AngularJS legacy software for Cordell & Cordell law firms.",
+      ],
+    },
     {
       company: "Dollar Bank",
       logo: DollarBankLogo,
@@ -55,22 +67,11 @@ const Home = () => {
         "Assisted in performing quality assurance and software testing via various tests tools and performance metrics to ensure a responsive end-user experience.",
       ],
     },
-    {
-      company: "Blast Off Apps",
-      logo: BlastOffAppsLogo,
-      location: "Remote",
-      position: "Contractor",
-      time: "April 2015 - July 2016 (1 yr 4 mos)",
-      content: [
-        "Developed mobile apps for various clients for Android and iOS including FastMovie Photos, Words and Music, Vehicle List and Pinball Price.",
-        "Analyzed the market needs and designed the applications based on client's needs.",
-        "Investigated the applications performance using virtual Android and iOS Emulators.",
-      ],
-    },
   ];
 
   const education = {
     school: "Saint Vincent College",
+    logo: SVCLogo,
     location: "Latrobe, PA",
     position: "Computing and Information Science",
     time: "2014 - 2018",
@@ -95,7 +96,7 @@ const Home = () => {
       </Tile>
       <Tile title="Education" type="edu">
         <div>
-          <Section title={education.title} experience={education} />
+          <Section experience={education} />
         </div>
       </Tile>
     </div>
