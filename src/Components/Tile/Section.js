@@ -8,7 +8,9 @@ const WorkSection = (props) => {
           <img
             src={experience.logo}
             alt="Company Logo"
-            className="w-auto h-full text-center"
+            className={`${
+              experience.school ? "w-auto" : "w-full"
+            } h-auto text-center`}
           />
         ) : (
           ""

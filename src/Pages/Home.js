@@ -9,13 +9,13 @@ import moment from "moment";
 
 const Home = () => {
   const currentJobTime = () => {
-    var start = moment([2021, 8]);
+    var start = moment([2023, 3]);
     var end = moment([moment().year(), moment().month() + 2]);
 
     var months = moment.duration(end.diff(start)).months();
     var years = moment.duration(end.diff(start)).years();
 
-    return `(${years > 0 ? years + (years > 1 ? " yrs" : " yr") : ""} ${
+    return `(${years > 0 ? years + (years > 1 ? " yrs" : " yr") : ""}${
       months > 0 ? months + (months > 1 ? " mos" : " mo") : ""
     })`;
   };
@@ -37,7 +37,7 @@ const Home = () => {
       logo: DollarBankLogo,
       location: "Pittsburgh, PA",
       position: "Senior Application Developer",
-      time: "August 2021 - Present " + currentJobTime(),
+      time: "August 2021 - March 2023 (1 yr 8 mos)",
       content: [
         "Developed .NET applications from console applications to web services.",
         "Rewrote legacy ASP.NET web pages to .NET MVC.",
