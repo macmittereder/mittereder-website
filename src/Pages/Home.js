@@ -24,9 +24,10 @@ const Home = () => {
     {
       company: "Lexicon",
       logo: LexiconLogo,
-      location: "remote",
+      location: "Remote",
       position: "Full Stack Developer",
-      time: "August 2021 - Present " + currentJobTime(),
+      time: "August 2021 - Present ",
+      timeSummary: currentJobTime(),
       content: [
         "Developing Angular frontend and .NET backend SaaS for law firms.",
         "Maintaining AngularJS legacy software for Cordell & Cordell law firms.",
@@ -37,7 +38,8 @@ const Home = () => {
       logo: DollarBankLogo,
       location: "Pittsburgh, PA",
       position: "Senior Application Developer",
-      time: "August 2021 - March 2023 (1 yr 8 mos)",
+      time: "August 2021 - March 2023 ",
+      timeSummary: " (1 yr 8 mos)",
       content: [
         "Developed .NET applications from console applications to web services.",
         "Rewrote legacy ASP.NET web pages to .NET MVC.",
@@ -49,7 +51,8 @@ const Home = () => {
       logo: aSaLogo,
       location: "Murrysville, PA",
       position: "Software Developer II",
-      time: "May 2018 - August 2021 (3 yrs 4 mos)",
+      time: "May 2018 - August 2021 ",
+      timeSummary: " (3 yrs 4 mos)",
       content: [
         "Worked in two teams, Processing and Inventory Tracking, implementing new features using AngularJS and Entity Framework.",
         "Fixed customer issues all around the world including production database updates. ",
@@ -61,7 +64,8 @@ const Home = () => {
       logo: ATSLogo,
       location: "Greensburg, PA",
       position: "Software Engineer Intern",
-      time: "February 2017 - January 2018 (11 mos)",
+      time: "February 2017 - January 2018 ",
+      timeSummary: " (11 mos)",
       content: [
         "Developed disaster training software used by the Department of Defense using Pug, Node.js and Postgres.",
         "Assisted in performing quality assurance and software testing via various tests tools and performance metrics to ensure a responsive end-user experience.",
