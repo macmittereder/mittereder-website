@@ -29,9 +29,8 @@ const MitterederWebsite = () => {
             First written in Pug and Nodes.js with Sass middleware. Originally
             the CSS was being built on every page load with the middleware so
             that was fixed by creating a static CSS file with Grunt. The website
-            was hosted via VPS on a couple different hosting platforms until I
-            used the GitHub action on Digital Ocean to automatically deploy my
-            website.
+            is hosted on vercel where I have CI/CD set up directly to my
+            repository.
           </p>
         </div>
       </div>

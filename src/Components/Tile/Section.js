@@ -16,14 +16,20 @@ const WorkSection = (props) => {
           ""
         )}
       </div>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex-row">
         <p className="text-2xl font-bold text-left">
           {experience.company ?? experience.school}
         </p>
-        <p className="text-2xl">&nbsp;- {experience.location}</p>
+        <p className="text-2xl md:ml-2">
+          <span className="hidden md:inline">{" - "}</span>
+          {experience.location}
+        </p>
       </div>
-      <p className="text-2xl">{experience.position}</p>
-      <p className="text-lg font-bold">{experience.time}</p>
+      <p className="text-2xl underline">{experience.position}</p>
+      <div className="flex flex-col md:flex-row justify-start">
+        <p className="text-lg font-bold mr-1">{experience.time}</p>
+        <p className="text-lg font-bold">{experience.timeSummary ?? ""}</p>
+      </div>
       <ul className="ml-8">
         {experience.content.map((info, idx) => (
           <li className="list-disc text-md" key={idx}>
