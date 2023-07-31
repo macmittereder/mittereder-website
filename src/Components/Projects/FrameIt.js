@@ -6,7 +6,7 @@ const FrameIt = () => {
   return (
     <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
-        title="FrameIt"
+        title="Frame It"
         icon={icon}
         summary={`Created senior year of high school for iOS developed in xCode. The idea of this app 
         was brought to me by a classmate and we became partners to develop it. I was responsible for 

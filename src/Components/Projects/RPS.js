@@ -13,7 +13,7 @@ const RPS = () => {
   return (
     <div className="flex bg-white items-start flex-1 justify-center flex-wrap p-2">
       <ProjectHeader
-        title="Rock, Paper, Scissors"
+        title="Rock Paper Scissors"
         icon={icon}
         summary={`This app was developed junior year of high school for Android using eclipse. 
         The idea of this app was a proof of concept to develop my first app and publish it on 
