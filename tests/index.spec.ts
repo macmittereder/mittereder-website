@@ -50,5 +50,3 @@ test.describe("Content", () => {
     ).toBeTruthy();
   });
 });
-
-test.describe("Functionality", () => {});
