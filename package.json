@@ -4,9 +4,6 @@
   "homepage": "/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -43,6 +40,7 @@
     ]
   },
   "devDependencies": {
+    "@playwright/test": "^1.36.2",
     "autoprefixer": "^10.4.13",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.20",
