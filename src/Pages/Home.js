@@ -25,12 +25,12 @@ const Home = () => {
       company: "Lexicon",
       logo: LexiconLogo,
       location: "Remote",
-      position: "Full Stack Developer",
-      time: "August 2021 - Present ",
+      position: "Full Stack Software Developer",
+      time: "March 2023 - Present ",
       timeSummary: currentJobTime(),
       content: [
-        "Developing Angular frontend and .NET backend SaaS for law firms.",
-        "Maintaining AngularJS legacy software for Cordell & Cordell law firms.",
+        "Integrated new features in their modern application and refining code in the legacy application.",
+        "Worked closely with QA and PMOs to design, build, and deliver software features.",
       ],
     },
     {
@@ -77,8 +77,8 @@ const Home = () => {
     school: "Saint Vincent College",
     logo: SVCLogo,
     location: "Latrobe, PA",
-    position: "Computing and Information Science",
-    time: "2014 - 2018",
+    position: "BS - Computing and Information Science",
+    time: "",
     content: [
       "Courses taken include Server Side Programming, Database Concepts and Information Structures, Software Engineering, Discrete Mathematics, Computer Architecture and Operating Systems and Website Design.",
     ],
