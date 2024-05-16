@@ -3,13 +3,13 @@ import Section from "../Components/Tile/Section";
 import LexiconLogo from "../images/lexicon-logo.png";
 import DollarBankLogo from "../images/dollar-bank-logo.png";
 import aSaLogo from "../images/aSa-logo.png";
-import ATSLogo from "../images/ats-logo.png";
 import SVCLogo from "../images/svc-logo.png";
+import WebstaurantLogo from "../images/webstaurantstore-logo.png";
 import moment from "moment";
 
 const Home = () => {
   const currentJobTime = () => {
-    var start = moment([2023, 3]);
+    var start = moment([2024, 3]);
     var end = moment([moment().year(), moment().month() + 2]);
 
     var months = moment.duration(end.diff(start)).months();
@@ -22,12 +22,21 @@ const Home = () => {
 
   const workExperience = [
     {
+      company: "WebstaurantStore",
+      logo: WebstaurantLogo,
+      location: "Remote",
+      position: "Software Engineer II",
+      time: "March 2024 - Present",
+      timeSummary: currentJobTime(),
+      content: ["Creating internal tools to be used by customer relations."],
+    },
+    {
       company: "Lexicon",
       logo: LexiconLogo,
       location: "Remote",
       position: "Full Stack Software Developer",
-      time: "March 2023 - Present ",
-      timeSummary: currentJobTime(),
+      time: "March 2023 - March 2024 ",
+      timeSummary: " (1 yr)",
       content: [
         "Integrated new features in their modern application and refining code in the legacy application.",
         "Worked closely with QA and PMOs to design, build, and deliver software features.",
@@ -57,18 +66,6 @@ const Home = () => {
         "Worked in two teams, Processing and Inventory Tracking, implementing new features using AngularJS and Entity Framework.",
         "Fixed customer issues all around the world including production database updates. ",
         "Used SSRS to create reports for customers to be used everyday in their company. ",
-      ],
-    },
-    {
-      company: "ATS Evolution",
-      logo: ATSLogo,
-      location: "Greensburg, PA",
-      position: "Software Engineer Intern",
-      time: "February 2017 - January 2018 ",
-      timeSummary: " (11 mos)",
-      content: [
-        "Developed disaster training software used by the Department of Defense using Pug, Node.js and Postgres.",
-        "Assisted in performing quality assurance and software testing via various tests tools and performance metrics to ensure a responsive end-user experience.",
       ],
     },
   ];
